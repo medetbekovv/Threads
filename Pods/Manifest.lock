@@ -1,0 +1,24 @@
+PODS:
+  - AEOTPTextField (1.2.6)
+  - R.swift (7.3.2)
+  - SnapKit (5.6.0)
+
+DEPENDENCIES:
+  - AEOTPTextField
+  - R.swift
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - AEOTPTextField
+    - R.swift
+    - SnapKit
+
+SPEC CHECKSUMS:
+  AEOTPTextField: a275823fde05601c5da7f8fb66aaecb41289b370
+  R.swift: 0af0d882f49f03711415cb4e5215daa977d8a480
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+
+PODFILE CHECKSUM: fcc3867b5e3274a170116292334aed09ae4ec184
+
+COCOAPODS: 1.12.1
