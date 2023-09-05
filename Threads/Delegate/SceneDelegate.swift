@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
-        window?.rootViewController = HomeViewController()
+        window?.rootViewController = ThreadViewContrller()
         
 //        let controller = EditeProfileViewController()
 //        let navController = UINavigationController(rootViewController: controller)

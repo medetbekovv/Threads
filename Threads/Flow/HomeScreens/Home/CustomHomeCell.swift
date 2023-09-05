@@ -122,5 +122,50 @@ class CustomHomeCell : UITableViewCell {
             make.height.equalTo(flexibleHeight(to: 18))
             
         }
+        
+        threadLabel.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(flexibleHeight(to: 21))
+            make.leading.equalToSuperview().offset(flexibleWidth(to: 60))
+            make.trailing.equalToSuperview().inset(flexibleWidth(to: 12))
+        }
+        
+        postImage.snp.makeConstraints { make in
+            make.top.equalTo(threadLabel.snp.bottom).offset(flexibleHeight(to: 10))
+            make.leading.equalToSuperview().offset(flexibleWidth(to: 60))
+            make.trailing.equalToSuperview().inset(flexibleWidth(to: 12))
+
+        }
+        
+        likeButton.snp.makeConstraints { make in
+            make.top.equalTo(postImage.snp.bottom).offset(flexibleHeight(to: 15))
+            make.leading.equalToSuperview().offset(flexibleWidth(to: 60))
+//            make.bottom.equalToSuperview()
+        }
+        
+        commentButton.snp.makeConstraints { make in
+            make.top.equalTo(postImage.snp.bottom).offset(flexibleHeight(to: 15))
+            make.leading.equalTo(likeButton.snp.trailing).offset(flexibleWidth(to: 16))
+//            make.bottom.equalToSuperview()
+        }
+        
+        repostButton.snp.makeConstraints { make in
+            make.top.equalTo(postImage.snp.bottom).offset(flexibleHeight(to: 15))
+            make.leading.equalTo(commentButton.snp.trailing).offset(flexibleWidth(to: 16))
+//            make.bottom.equalToSuperview()
+
+        }
+        
+        sendButton.snp.makeConstraints { make in
+            make.top.equalTo(postImage.snp.bottom).offset(flexibleHeight(to: 15))
+            make.leading.equalTo(repostButton.snp.trailing).offset(flexibleWidth(to: 16))
+//            make.bottom.equalToSuperview()
+
+        }
+        
+        likesLabel.snp.makeConstraints { make in
+            make.top.equalTo(likeButton.snp.bottom).offset(flexibleHeight(to: 12))
+            make.leading.equalToSuperview().inset(flexibleWidth(to: 60))
+            make.bottom.equalToSuperview()
+        }
     }
 }

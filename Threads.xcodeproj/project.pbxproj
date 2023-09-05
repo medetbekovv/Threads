@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		06EB03618FB1766232DE1A68 /* Pods_Threads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8A463CDD2F24BEC18F4D462 /* Pods_Threads.framework */; };
+		2F156E122AA5CD2200AB5EBA /* ThreadViewContrller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F156E112AA5CD2200AB5EBA /* ThreadViewContrller.swift */; };
+		2F156E142AA5CD3600AB5EBA /* ThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F156E132AA5CD3600AB5EBA /* ThreadView.swift */; };
+		2F156E162AA5CD4A00AB5EBA /* CustomThreadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F156E152AA5CD4A00AB5EBA /* CustomThreadCell.swift */; };
 		2F45BAB32A7A575400099377 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45BAB22A7A575400099377 /* AppDelegate.swift */; };
 		2F45BAB52A7A575400099377 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45BAB42A7A575400099377 /* SceneDelegate.swift */; };
 		2F45BAB72A7A575400099377 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45BAB62A7A575400099377 /* ViewController.swift */; };
@@ -63,6 +66,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F156E112AA5CD2200AB5EBA /* ThreadViewContrller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadViewContrller.swift; sourceTree = "<group>"; };
+		2F156E132AA5CD3600AB5EBA /* ThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadView.swift; sourceTree = "<group>"; };
+		2F156E152AA5CD4A00AB5EBA /* CustomThreadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomThreadCell.swift; sourceTree = "<group>"; };
 		2F45BAAF2A7A575400099377 /* Threads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Threads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F45BAB22A7A575400099377 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F45BAB42A7A575400099377 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +140,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F156E0F2AA5CCBA00AB5EBA /* HomeScreens */ = {
+			isa = PBXGroup;
+			children = (
+				2F156E102AA5CCCC00AB5EBA /* Thread */,
+				2FB549712AA1EED300DB2F7C /* Home */,
+			);
+			path = HomeScreens;
+			sourceTree = "<group>";
+		};
+		2F156E102AA5CCCC00AB5EBA /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				2F156E112AA5CD2200AB5EBA /* ThreadViewContrller.swift */,
+				2F156E132AA5CD3600AB5EBA /* ThreadView.swift */,
+				2F156E152AA5CD4A00AB5EBA /* CustomThreadCell.swift */,
+			);
+			path = Thread;
+			sourceTree = "<group>";
+		};
 		2F45BAA62A7A575400099377 = {
 			isa = PBXGroup;
 			children = (
@@ -191,7 +216,7 @@
 		2F45BACC2A7A5CD800099377 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
-				2FB549712AA1EED300DB2F7C /* Home */,
+				2F156E0F2AA5CCBA00AB5EBA /* HomeScreens */,
 				2FE3A0702A8A111300AA4A93 /* Authorization */,
 				2FE3A0712A8A113F00AA4A93 /* Profile */,
 			);
@@ -542,8 +567,10 @@
 				2FB549752AA1EF7C00DB2F7C /* HomeView.swift in Sources */,
 				2FC513BD2AA1F58000FBDB6C /* CustomHomeCell.swift in Sources */,
 				2FE3A06A2A81023D00AA4A93 /* CreateNewPasswordViewController.swift in Sources */,
+				2F156E162AA5CD4A00AB5EBA /* CustomThreadCell.swift in Sources */,
 				2F45BACF2A7A5D1B00099377 /* FlexibleHeightWidth.swift in Sources */,
 				2FE3A0762A8A1BF800AA4A93 /* ProfileViewController.swift in Sources */,
+				2F156E122AA5CD2200AB5EBA /* ThreadViewContrller.swift in Sources */,
 				2FE3A05E2A80D97700AA4A93 /* ForgotPasswordView.swift in Sources */,
 				2FE3A06F2A84C4BA00AA4A93 /* OTPVerificationViewController.swift in Sources */,
 				2F45BAD22A7A5ED900099377 /* LoginView.swift in Sources */,
@@ -555,6 +582,7 @@
 				2F45BAD42A7A5EE300099377 /* LoginViewController.swift in Sources */,
 				2F45BACB2A7A58A100099377 /* BaseView.swift in Sources */,
 				2FB549732AA1EF7400DB2F7C /* HomeViewController.swift in Sources */,
+				2F156E142AA5CD3600AB5EBA /* ThreadView.swift in Sources */,
 				2FE3A0652A80EB1700AA4A93 /* SignUpViewController.swift in Sources */,
 				2FE3A0682A81022A00AA4A93 /* CreateNewPasswordView.swift in Sources */,
 				2FB549622A8CBF6200DB2F7C /* EditeProfileViewController.swift in Sources */,
