@@ -27,7 +27,7 @@ class LoginView : BaseView {
         return label
     }()
     
-    private lazy var tfEmail : UITextField = {
+     lazy var emailTextFieldEmail : UITextField = {
         let tf = UITextField()
         tf.placeholder = "Your email"
         tf.layer.cornerRadius = 8
@@ -42,7 +42,7 @@ class LoginView : BaseView {
         return tf
     }()
     
-    private lazy var tfPassword : UITextField = {
+     lazy var passwordTextField : UITextField = {
         let tf = UITextField()
         tf.placeholder = "Password"
         tf.isSecureTextEntry = true
@@ -68,7 +68,7 @@ class LoginView : BaseView {
         return tf
     }()
     
-    private lazy var forgotButton : UIButton = {
+     lazy var forgotButton : UIButton = {
         let button = UIButton(type: .custom)
         button.setTitle("Forgot password ?", for: .normal)
         button.titleLabel?.font = R.font.sfProDisplayBold(size: 15)
@@ -76,7 +76,7 @@ class LoginView : BaseView {
         return button
     }()
     
-    private lazy var logIn : UIButton = {
+     lazy var logInButton : UIButton = {
         let button = UIButton(type: .custom)
         button.setTitle("Log in", for: .normal)
         button.backgroundColor = UIColor.black
@@ -105,7 +105,7 @@ class LoginView : BaseView {
         return view
     }()
     
-    private lazy var logWtGoogle : UIButton = {
+     lazy var logWtGoogle : UIButton = {
         let button = UIButton()
         button.setTitle("Login with Google", for: .normal)
         button.setTitleColor(.black, for: .normal)
@@ -117,7 +117,7 @@ class LoginView : BaseView {
         return button
     }()
     
-    private lazy var logWtApple : UIButton = {
+     lazy var logWtApple : UIButton = {
         let button = UIButton()
         button.setTitle("Login with Apple", for: .normal)
         button.setTitleColor(.black, for: .normal)
@@ -136,7 +136,7 @@ class LoginView : BaseView {
         return label
     }()
     
-    private lazy var signUp : UIButton = {
+     lazy var signUpButton : UIButton = {
         let button = UIButton()
         button.setTitle("Sign up", for: .normal)
         button.setTitleColor(.black, for: .normal)
@@ -167,24 +167,24 @@ class LoginView : BaseView {
     override func setupViews() {
         addSubview(title)
         addSubview(subTitle)
-        addSubview(tfEmail)
-        addSubview(tfPassword)
+        addSubview(emailTextFieldEmail)
+        addSubview(passwordTextField)
         addSubview(forgotButton)
-        addSubview(logIn)
+        addSubview(logInButton)
         addSubview(rectangle)
         addSubview(or)
         addSubview(rectangle2)
         addSubview(logWtGoogle)
         addSubview(logWtApple)
         addSubview(dontHaveAccount)
-        addSubview(signUp)
+        addSubview(signUpButton)
         addSubview(googleImage)
         addSubview(appleImage)
     }
     
     @objc func togglePasswordVisibility(_ sender: UIButton) {
          sender.isSelected = !sender.isSelected
-         tfPassword.isSecureTextEntry = !tfPassword.isSecureTextEntry
+         passwordTextField.isSecureTextEntry = !passwordTextField.isSecureTextEntry
      }
     
     override func setupConstraints() {
@@ -202,7 +202,7 @@ class LoginView : BaseView {
             make.width.equalTo(flexibleWidth(to: 142))
         }
         
-        tfEmail.snp.makeConstraints { make in
+        emailTextFieldEmail.snp.makeConstraints { make in
             make.top.equalTo(subTitle.snp.bottom).offset(flexibleHeight(to: 32))
             make.leading.equalToSuperview().offset(flexibleWidth(to: 16))
             make.height.equalTo(flexibleWidth(to: 48))
@@ -210,8 +210,8 @@ class LoginView : BaseView {
             make.trailing.equalToSuperview().offset(flexibleWidth(to: -16))
         }
         
-        tfPassword.snp.makeConstraints { make in
-            make.top.equalTo(tfEmail.snp.bottom).offset(flexibleHeight(to: 12))
+        passwordTextField.snp.makeConstraints { make in
+            make.top.equalTo(emailTextFieldEmail.snp.bottom).offset(flexibleHeight(to: 12))
             make.leading.equalToSuperview().offset(flexibleWidth(to: 16))
             make.trailing.equalToSuperview().offset(flexibleWidth(to: -16))
             make.height.equalTo(flexibleWidth(to: 48))
@@ -219,12 +219,12 @@ class LoginView : BaseView {
         }
         
         forgotButton.snp.makeConstraints { make in
-            make.top.equalTo(tfPassword.snp.bottom).offset(flexibleHeight(to: 22))
+            make.top.equalTo(passwordTextField.snp.bottom).offset(flexibleHeight(to: 22))
             make.leading.equalToSuperview().offset(flexibleWidth(to: 22))
        
         }
         
-        logIn.snp.makeConstraints { make in
+        logInButton.snp.makeConstraints { make in
             make.top.equalTo(forgotButton.snp.bottom).offset(flexibleHeight(to: 26))
             make.height.equalTo(flexibleHeight(to: flexibleHeight(to: 48)))
             make.width.equalTo(flexibleWidth(to: flexibleWidth(to: 361)))
@@ -233,14 +233,14 @@ class LoginView : BaseView {
         }
         
         rectangle.snp.makeConstraints { make in
-            make.top.equalTo(logIn.snp.bottom).offset(flexibleHeight(to: 33))
+            make.top.equalTo(logInButton.snp.bottom).offset(flexibleHeight(to: 33))
             make.leading.equalToSuperview().offset(flexibleWidth(to: 21))
             make.height.equalTo(flexibleWidth(to: 1))
             make.width.equalTo(flexibleWidth(to: 154))
         }
         
         or.snp.makeConstraints { make in
-            make.top.equalTo(logIn.snp.bottom).offset(flexibleHeight(to: 24))
+            make.top.equalTo(logInButton.snp.bottom).offset(flexibleHeight(to: 24))
             make.width.equalTo(flexibleWidth(to: 14))
             make.height.equalTo(flexibleHeight(to: 18))
             make.leading.equalTo(rectangle.snp.trailing).offset(flexibleWidth(to: 15))
@@ -249,7 +249,7 @@ class LoginView : BaseView {
         }
         
         rectangle2.snp.makeConstraints { make in
-            make.top.equalTo(logIn.snp.bottom).offset(flexibleHeight(to: 33))
+            make.top.equalTo(logInButton.snp.bottom).offset(flexibleHeight(to: 33))
             make.trailing.equalToSuperview().offset(flexibleWidth(to: -21))
             make.height.equalTo(flexibleWidth(to: 1))
             make.width.equalTo(flexibleWidth(to: 154))
@@ -274,7 +274,7 @@ class LoginView : BaseView {
             make.leading.equalToSuperview().offset(flexibleWidth(to: 16))
         }
         
-        signUp.snp.makeConstraints { make in
+        signUpButton.snp.makeConstraints { make in
             make.top.equalTo(logWtApple.snp.bottom).offset(flexibleHeight(to: 71))
             make.leading.equalTo(dontHaveAccount.snp.trailing).offset(flexibleWidth(to: 1))
         }

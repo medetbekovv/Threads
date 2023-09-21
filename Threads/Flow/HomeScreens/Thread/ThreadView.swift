@@ -18,7 +18,7 @@ class ThreadView : BaseView {
         return label
     }()
     
-    private lazy var backButton : UIButton = {
+     lazy var backButton : UIButton = {
         let button = UIButton()
         button.setImage(UIImage(named: "BackIcon"), for: .normal)
         return button
@@ -129,12 +129,13 @@ class ThreadView : BaseView {
         let tableView = UITableView()
         tableView.backgroundColor = .clear
         tableView.separatorStyle = .none
-        tableView.register(CustomThreadCell.self,forCellReuseIdentifier: "cell")
+//        tableView.register(CustomThreadCell.self,forCellReuseIdentifier: "cell")
         return tableView
     }()
     
     lazy var replyTextField : UITextField = {
         let textField = UITextField()
+        textField.backgroundColor = UIColor(red: 217/255, green: 217/255, blue: 217/255, alpha: 1)
         textField.placeholder = "Reply to iamnalimov"
         textField.layer.cornerRadius = flexibleHeight(to: 22)
         textField.font = R.font.sfProDisplayRegular(size: 14)
@@ -276,7 +277,21 @@ class ThreadView : BaseView {
         tableView.snp.makeConstraints { make in
             make.top.equalTo(commentDividerLine.snp.bottom).offset(flexibleHeight(to: 14))
             make.leading.trailing.equalToSuperview()
-            make.height.equalTo(77)
+//            make.height.equalTo(77)
+            make.bottom.equalToSuperview().inset(flexibleHeight(to: 98))
+        }
+        
+        replyTextField.snp.makeConstraints{ make in
+            make.top.equalToSuperview().inset(flexibleHeight(to: 777))
+            make.leading.trailing.equalToSuperview().inset(flexibleHeight(to: 16))
+            make.bottom.equalToSuperview().inset(flexibleHeight(to: 31))
+        }
+        
+        replyAvatarImage.snp.makeConstraints{ make in
+            make.top.equalTo(replyTextField.snp.top).offset(flexibleHeight(to: 10))
+            make.leading.equalTo(replyTextField.snp.leading).offset(flexibleHeight(to: 10))
+            make.trailing.equalTo(replyTextField.snp.trailing).inset(flexibleHeight(to: 327))
+            make.bottom.equalTo(replyTextField.snp.bottom).inset(flexibleHeight(to: 10))
         }
         
         

@@ -18,7 +18,7 @@ class SignUpView: BaseView {
         return label
     }()
     
-    private lazy var subTitle : UILabel = {
+     lazy var subTitle : UILabel = {
         let label = UILabel()
         label.text = "Create account to start using Threads"
         label.font = R.font.sfProDisplayMedium(size: 17)
@@ -27,7 +27,7 @@ class SignUpView: BaseView {
         
     }()
     
-    private lazy var textFieldEmail : UITextField = {
+     lazy var textFieldEmail : UITextField = {
         let tf = UITextField()
         tf.placeholder = "Your email"
         tf.layer.cornerRadius = 8
@@ -43,7 +43,7 @@ class SignUpView: BaseView {
 
     }()
     
-    private lazy var textFieldName : UITextField = {
+     lazy var textFieldName : UITextField = {
         let tf = UITextField()
         tf.placeholder = "Your name"
         tf.layer.cornerRadius = 8
@@ -58,7 +58,7 @@ class SignUpView: BaseView {
         return tf
     }()
     
-    private lazy var textFieldPassword : UITextField = {
+     lazy var textFieldPassword : UITextField = {
         let tf = UITextField()
         tf.placeholder = "Password"
         tf.isSecureTextEntry = true
@@ -84,7 +84,7 @@ class SignUpView: BaseView {
         return tf
     }()
     
-    private lazy var textFieldConfirmPassword : UITextField = {
+     lazy var textFieldConfirmPassword : UITextField = {
         let tf = UITextField()
         tf.placeholder = "Confirm password"
         tf.layer.cornerRadius = 8
@@ -107,12 +107,10 @@ class SignUpView: BaseView {
         tf.rightView = button
         tf.rightViewMode = .always
         
-        
-
         return tf
     }()
     
-    private lazy var createAccountButton : UIButton = {
+     lazy var createAccountButton : UIButton = {
         let button = UIButton(type: .custom)
         button.setTitle("Create account", for: .normal)
         button.backgroundColor = UIColor.black

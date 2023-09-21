@@ -11,6 +11,11 @@
 		2F156E122AA5CD2200AB5EBA /* ThreadViewContrller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F156E112AA5CD2200AB5EBA /* ThreadViewContrller.swift */; };
 		2F156E142AA5CD3600AB5EBA /* ThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F156E132AA5CD3600AB5EBA /* ThreadView.swift */; };
 		2F156E162AA5CD4A00AB5EBA /* CustomThreadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F156E152AA5CD4A00AB5EBA /* CustomThreadCell.swift */; };
+		2F156E3E2AA8B39000AB5EBA /* SearchViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F156E3D2AA8B39000AB5EBA /* SearchViewContoller.swift */; };
+		2F156E402AA8B3B700AB5EBA /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F156E3F2AA8B3B700AB5EBA /* SearchView.swift */; };
+		2F156E422AA8B3C800AB5EBA /* CustomSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F156E412AA8B3C800AB5EBA /* CustomSearchCell.swift */; };
+		2F156E452AA8B69800AB5EBA /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F156E442AA8B69800AB5EBA /* Service.swift */; };
+		2F156E472AA8BB1C00AB5EBA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F156E462AA8BB1C00AB5EBA /* LoginViewModel.swift */; };
 		2F45BAB32A7A575400099377 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45BAB22A7A575400099377 /* AppDelegate.swift */; };
 		2F45BAB52A7A575400099377 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45BAB42A7A575400099377 /* SceneDelegate.swift */; };
 		2F45BAB72A7A575400099377 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45BAB62A7A575400099377 /* ViewController.swift */; };
@@ -53,6 +58,12 @@
 		2FB549732AA1EF7400DB2F7C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB549722AA1EF7400DB2F7C /* HomeViewController.swift */; };
 		2FB549752AA1EF7C00DB2F7C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB549742AA1EF7C00DB2F7C /* HomeView.swift */; };
 		2FC513BD2AA1F58000FBDB6C /* CustomHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC513BC2AA1F58000FBDB6C /* CustomHomeCell.swift */; };
+		2FD6668F2AB0470A00C902FC /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD6668E2AB0470A00C902FC /* SignUpViewModel.swift */; };
+		2FD666942AB1C20A00C902FC /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD666932AB1C20A00C902FC /* AuthManager.swift */; };
+		2FD666972AB851A600C902FC /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD666962AB851A600C902FC /* ForgotPasswordViewModel.swift */; };
+		2FD666992AB85E5D00C902FC /* OTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD666982AB85E5D00C902FC /* OTPViewModel.swift */; };
+		2FD6669C2AB8D3FC00C902FC /* TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD6669B2AB8D3FC00C902FC /* TokenResponse.swift */; };
+		2FD6669E2ABAEDC900C902FC /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD6669D2ABAEDC900C902FC /* EditProfileViewModel.swift */; };
 		2FE3A05E2A80D97700AA4A93 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE3A05D2A80D97700AA4A93 /* ForgotPasswordView.swift */; };
 		2FE3A0602A80D99300AA4A93 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE3A05F2A80D99300AA4A93 /* ForgotPasswordViewController.swift */; };
 		2FE3A0632A80EB0200AA4A93 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE3A0622A80EB0200AA4A93 /* SignUpView.swift */; };
@@ -69,6 +80,11 @@
 		2F156E112AA5CD2200AB5EBA /* ThreadViewContrller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadViewContrller.swift; sourceTree = "<group>"; };
 		2F156E132AA5CD3600AB5EBA /* ThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadView.swift; sourceTree = "<group>"; };
 		2F156E152AA5CD4A00AB5EBA /* CustomThreadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomThreadCell.swift; sourceTree = "<group>"; };
+		2F156E3D2AA8B39000AB5EBA /* SearchViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewContoller.swift; sourceTree = "<group>"; };
+		2F156E3F2AA8B3B700AB5EBA /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		2F156E412AA8B3C800AB5EBA /* CustomSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchCell.swift; sourceTree = "<group>"; };
+		2F156E442AA8B69800AB5EBA /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		2F156E462AA8BB1C00AB5EBA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		2F45BAAF2A7A575400099377 /* Threads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Threads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F45BAB22A7A575400099377 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F45BAB42A7A575400099377 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +129,12 @@
 		2FB549722AA1EF7400DB2F7C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2FB549742AA1EF7C00DB2F7C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2FC513BC2AA1F58000FBDB6C /* CustomHomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHomeCell.swift; sourceTree = "<group>"; };
+		2FD6668E2AB0470A00C902FC /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		2FD666932AB1C20A00C902FC /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		2FD666962AB851A600C902FC /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		2FD666982AB85E5D00C902FC /* OTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewModel.swift; sourceTree = "<group>"; };
+		2FD6669B2AB8D3FC00C902FC /* TokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenResponse.swift; sourceTree = "<group>"; };
+		2FD6669D2ABAEDC900C902FC /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		2FE3A05D2A80D97700AA4A93 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		2FE3A05F2A80D99300AA4A93 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		2FE3A0622A80EB0200AA4A93 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -159,6 +181,32 @@
 			path = Thread;
 			sourceTree = "<group>";
 		};
+		2F156E3B2AA8B35700AB5EBA /* SearchScreens */ = {
+			isa = PBXGroup;
+			children = (
+				2F156E3C2AA8B37100AB5EBA /* Search */,
+			);
+			path = SearchScreens;
+			sourceTree = "<group>";
+		};
+		2F156E3C2AA8B37100AB5EBA /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				2F156E3D2AA8B39000AB5EBA /* SearchViewContoller.swift */,
+				2F156E3F2AA8B3B700AB5EBA /* SearchView.swift */,
+				2F156E412AA8B3C800AB5EBA /* CustomSearchCell.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		2F156E432AA8B67300AB5EBA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2F156E442AA8B69800AB5EBA /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		2F45BAA62A7A575400099377 = {
 			isa = PBXGroup;
 			children = (
@@ -180,9 +228,12 @@
 		2F45BAB12A7A575400099377 /* Threads */ = {
 			isa = PBXGroup;
 			children = (
+				2FD6669A2AB8D3EA00C902FC /* Model */,
+				2FD666922AB1C1F300C902FC /* AuthManager */,
 				2FB549682A8F67F200DB2F7C /* Custom */,
 				2FB549652A8F575700DB2F7C /* TabBar */,
 				2F45BACD2A7A5CDD00099377 /* Helpers */,
+				2F156E432AA8B67300AB5EBA /* Service */,
 				2F45BACC2A7A5CD800099377 /* Flow */,
 				2F45BAC72A7A588400099377 /* Base */,
 				2F45BAC62A7A57B100099377 /* Delegate */,
@@ -216,6 +267,7 @@
 		2F45BACC2A7A5CD800099377 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
+				2F156E3B2AA8B35700AB5EBA /* SearchScreens */,
 				2F156E0F2AA5CCBA00AB5EBA /* HomeScreens */,
 				2FE3A0702A8A111300AA4A93 /* Authorization */,
 				2FE3A0712A8A113F00AA4A93 /* Profile */,
@@ -239,6 +291,7 @@
 			children = (
 				2F45BAD12A7A5ED900099377 /* LoginView.swift */,
 				2F45BAD32A7A5EE300099377 /* LoginViewController.swift */,
+				2F156E462AA8BB1C00AB5EBA /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -275,6 +328,7 @@
 			children = (
 				2FB5495F2A8CBF5300DB2F7C /* EditeProfileView.swift */,
 				2FB549612A8CBF6200DB2F7C /* EditeProfileViewController.swift */,
+				2FD6669D2ABAEDC900C902FC /* EditProfileViewModel.swift */,
 			);
 			path = EditProfile;
 			sourceTree = "<group>";
@@ -322,11 +376,28 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		2FD666922AB1C1F300C902FC /* AuthManager */ = {
+			isa = PBXGroup;
+			children = (
+				2FD666932AB1C20A00C902FC /* AuthManager.swift */,
+			);
+			path = AuthManager;
+			sourceTree = "<group>";
+		};
+		2FD6669A2AB8D3EA00C902FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2FD6669B2AB8D3FC00C902FC /* TokenResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		2FE3A05C2A80D94A00AA4A93 /* ForgotPassword */ = {
 			isa = PBXGroup;
 			children = (
-				2FE3A05D2A80D97700AA4A93 /* ForgotPasswordView.swift */,
 				2FE3A05F2A80D99300AA4A93 /* ForgotPasswordViewController.swift */,
+				2FE3A05D2A80D97700AA4A93 /* ForgotPasswordView.swift */,
+				2FD666962AB851A600C902FC /* ForgotPasswordViewModel.swift */,
 			);
 			path = ForgotPassword;
 			sourceTree = "<group>";
@@ -336,6 +407,7 @@
 			children = (
 				2FE3A0622A80EB0200AA4A93 /* SignUpView.swift */,
 				2FE3A0642A80EB1700AA4A93 /* SignUpViewController.swift */,
+				2FD6668E2AB0470A00C902FC /* SignUpViewModel.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -354,6 +426,7 @@
 			children = (
 				2FE3A06C2A84C4AC00AA4A93 /* OTPVerificationView.swift */,
 				2FE3A06E2A84C4BA00AA4A93 /* OTPVerificationViewController.swift */,
+				2FD666982AB85E5D00C902FC /* OTPViewModel.swift */,
 			);
 			path = OTPVerification;
 			sourceTree = "<group>";
@@ -373,8 +446,8 @@
 		2FE3A0712A8A113F00AA4A93 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				2FB5495E2A8CBF3600DB2F7C /* EditProfile */,
 				2FE3A0722A8A1BBF00AA4A93 /* Profile */,
+				2FB5495E2A8CBF3600DB2F7C /* EditProfile */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -568,26 +641,37 @@
 				2FC513BD2AA1F58000FBDB6C /* CustomHomeCell.swift in Sources */,
 				2FE3A06A2A81023D00AA4A93 /* CreateNewPasswordViewController.swift in Sources */,
 				2F156E162AA5CD4A00AB5EBA /* CustomThreadCell.swift in Sources */,
+				2F156E452AA8B69800AB5EBA /* Service.swift in Sources */,
 				2F45BACF2A7A5D1B00099377 /* FlexibleHeightWidth.swift in Sources */,
+				2F156E402AA8B3B700AB5EBA /* SearchView.swift in Sources */,
 				2FE3A0762A8A1BF800AA4A93 /* ProfileViewController.swift in Sources */,
+				2F156E3E2AA8B39000AB5EBA /* SearchViewContoller.swift in Sources */,
 				2F156E122AA5CD2200AB5EBA /* ThreadViewContrller.swift in Sources */,
 				2FE3A05E2A80D97700AA4A93 /* ForgotPasswordView.swift in Sources */,
 				2FE3A06F2A84C4BA00AA4A93 /* OTPVerificationViewController.swift in Sources */,
 				2F45BAD22A7A5ED900099377 /* LoginView.swift in Sources */,
 				2F45BB092A7FEB2300099377 /* R.generated.swift in Sources */,
 				2F45BAB72A7A575400099377 /* ViewController.swift in Sources */,
+				2FD6669C2AB8D3FC00C902FC /* TokenResponse.swift in Sources */,
+				2FD666972AB851A600C902FC /* ForgotPasswordViewModel.swift in Sources */,
+				2FD666942AB1C20A00C902FC /* AuthManager.swift in Sources */,
 				2FB549672A8F57AF00DB2F7C /* TabBarController.swift in Sources */,
 				2FB549602A8CBF5300DB2F7C /* EditeProfileView.swift in Sources */,
 				2F45BAC92A7A589600099377 /* BaseViewController.swift in Sources */,
 				2F45BAD42A7A5EE300099377 /* LoginViewController.swift in Sources */,
 				2F45BACB2A7A58A100099377 /* BaseView.swift in Sources */,
+				2F156E422AA8B3C800AB5EBA /* CustomSearchCell.swift in Sources */,
 				2FB549732AA1EF7400DB2F7C /* HomeViewController.swift in Sources */,
 				2F156E142AA5CD3600AB5EBA /* ThreadView.swift in Sources */,
+				2FD6668F2AB0470A00C902FC /* SignUpViewModel.swift in Sources */,
 				2FE3A0652A80EB1700AA4A93 /* SignUpViewController.swift in Sources */,
 				2FE3A0682A81022A00AA4A93 /* CreateNewPasswordView.swift in Sources */,
 				2FB549622A8CBF6200DB2F7C /* EditeProfileViewController.swift in Sources */,
+				2FD6669E2ABAEDC900C902FC /* EditProfileViewModel.swift in Sources */,
 				2FE3A0632A80EB0200AA4A93 /* SignUpView.swift in Sources */,
 				2FB5496B2A8F6B5000DB2F7C /* BorderedTextField.swift in Sources */,
+				2F156E472AA8BB1C00AB5EBA /* LoginViewModel.swift in Sources */,
+				2FD666992AB85E5D00C902FC /* OTPViewModel.swift in Sources */,
 				2FE3A0602A80D99300AA4A93 /* ForgotPasswordViewController.swift in Sources */,
 				2F45BB0B2A7FF07C00099377 /* Extension - Color.swift in Sources */,
 				2F45BAB32A7A575400099377 /* AppDelegate.swift in Sources */,

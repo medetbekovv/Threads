@@ -39,7 +39,7 @@ class OTPVerificationView : BaseView {
 
 
     
-    private lazy var verifyButton : UIButton = {
+     lazy var verifyButton : UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Verify", for: .normal)
         button.backgroundColor = UIColor.black
@@ -48,7 +48,7 @@ class OTPVerificationView : BaseView {
         return button
     }()
     
-    private lazy var sendAgainButton : UIButton = {
+     lazy var sendAgainButton : UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Send again", for: .normal)
         button.setTitleColor(.black, for: .normal)

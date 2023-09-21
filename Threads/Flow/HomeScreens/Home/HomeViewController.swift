@@ -50,4 +50,10 @@ extension HomeViewController : UITableViewDataSource , UITableViewDelegate {
         return UITableView.automaticDimension
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailViewController = ThreadViewContrller()
+        detailViewController.modalPresentationStyle = .fullScreen
+        present(detailViewController, animated: true)
+    }
+    
 }

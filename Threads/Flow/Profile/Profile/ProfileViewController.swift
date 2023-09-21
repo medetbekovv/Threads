@@ -28,7 +28,7 @@ class ProfileViewController : UIViewController {
     }
     
     @objc func navigationButton() {
-          let vc = LoginViewController()
+        let vc = LoginViewController(loginProtocol: LoginViewModel())
           navigationController?.pushViewController(vc, animated: true)
       }
     

@@ -27,7 +27,7 @@ class ForgotPasswordView : BaseView {
         
     }()
     
-    private lazy var textFieldEmail : UITextField = {
+     lazy var textFieldEmail : UITextField = {
         let tf = UITextField()
         tf.placeholder = "Your email"
         tf.layer.cornerRadius = 8
@@ -42,7 +42,7 @@ class ForgotPasswordView : BaseView {
         return tf
     }()
     
-    private lazy var continueButton : UIButton = {
+     lazy var continueButton : UIButton = {
         let button = UIButton(type: .custom)
         button.setTitle("Continue", for: .normal)
         button.backgroundColor = UIColor.black

@@ -21,10 +21,19 @@ class ThreadViewContrller : BaseViewController {
         setupConstraints()
     }
     
-    override func addTargets() {}
+    override func addTargets() {
+        contentView.backButton.addTarget(self, action: #selector(exiteButtonPressed), for: .touchUpInside)
+    }
+    
+    @objc func exiteButtonPressed() {
+        dismiss(animated: true,completion: nil)
+    }
     
     override func setupViews() {
         view.addSubview(contentView)
+        contentView.tableView.delegate = self
+        contentView.tableView.dataSource = self
+        contentView.tableView.register(CustomThreadCell.self, forCellReuseIdentifier: "cell")
     }
     
     override func setupConstraints() {
@@ -32,5 +41,22 @@ class ThreadViewContrller : BaseViewController {
             make.edges.equalToSuperview()
         }
     }
+    
+}
+
+extension ThreadViewContrller: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomThreadCell
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
     
 }

@@ -16,8 +16,8 @@ class TabBarController : UITabBarController {
         tabBar.frame.size.height = 83
         tabBar.tintColor = .black
         
-        viewControllers = [createController(viewController: UIViewController(), imageName: "home"),
-                           createController(viewController: UIViewController(), imageName: "search"),
+        viewControllers = [createController(viewController: HomeViewController(), imageName: "home"),
+                           createController(viewController: SearchViewContoller(), imageName: "search"),
                            createController(viewController: UIViewController(), imageName: "write"),
                            createController(viewController: UIViewController(), imageName: "activity"),
                            createController(viewController: ProfileViewController(), imageName: "profile")
