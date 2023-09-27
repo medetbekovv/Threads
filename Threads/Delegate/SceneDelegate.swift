@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        window?.rootViewController = LoginViewController()
 //        window?.rootViewController = UINavigationController(rootViewController:LoginViewController(loginProtocol: LoginViewModel()))
         window?.rootViewController = UINavigationController(rootViewController:LoginViewController(loginProtocol: LoginViewModel()))
-///        window?.rootViewController = UINavigationController(rootViewController:TabBarController())
+//      window?.rootViewController = UINavigationController(rootViewController:TabBarController())
 
         
 

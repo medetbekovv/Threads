@@ -17,10 +17,10 @@ class TabBarController : UITabBarController {
         tabBar.tintColor = .black
         
         viewControllers = [createController(viewController: HomeViewController(), imageName: "home"),
-                           createController(viewController: SearchViewContoller(), imageName: "search"),
+                           createController(viewController: SearchViewController(), imageName: "search"),
                            createController(viewController: UIViewController(), imageName: "write"),
                            createController(viewController: UIViewController(), imageName: "activity"),
-                           createController(viewController: ProfileViewController(), imageName: "profile")
+                           createController(viewController: ProfileViewController(profileProtocol: ProfileViewModel()), imageName: "profile")
         ]
         
     }

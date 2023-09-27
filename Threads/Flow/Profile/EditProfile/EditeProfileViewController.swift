@@ -8,11 +8,29 @@
 import SnapKit
 import UIKit
 
-class EditProfileViewController: UIViewController {
+class EditProfileViewController: BaseViewController {
     
     private let contentView = EditProfileView()
     
+    var editProfileProtocol: EditeProfileProtocol
+    var username: String?
+    var name: String?
+    var bio: String?
+    var photo: UIImage?
     var isEditButtonPressed = false
+    
+    init(editProfileProtocol: EditeProfileProtocol,username: String?, name: String?, bio: String?, photo: UIImage?) {
+        self.editProfileProtocol = editProfileProtocol
+        self.username = username
+        self.name = name
+        self.bio = bio
+        self.photo = photo
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +39,6 @@ class EditProfileViewController: UIViewController {
         setupView()
         setupTapGesture()
     }
-    
     func setupView() {
         view.addSubview(contentView)
         
@@ -30,10 +47,18 @@ class EditProfileViewController: UIViewController {
         }
     }
     
-    func addTargets() {
+    func parseUserData() {
+        contentView.usernameTextField.text = username
+        contentView.nameTextField.text = name
+        contentView.bioTextField.text = bio
+        contentView.profilePicture.image = photo
+    }
+    
+    override func addTargets() {
         contentView.editPhotoButton.addTarget(self, action: #selector(editButtonPressed), for: .touchUpInside)
         contentView.bottomSheet.setProfilePicture.addTarget(self, action: #selector(setProfilePicturePressed), for: .touchUpInside)
         contentView.exiteButton.addTarget(self, action: #selector(exiteButtonPressed), for: .touchUpInside)
+        contentView.doneButton.addTarget(self, action: #selector(doneButtonPressed), for: .touchUpInside)
     }
     
     @objc func editButtonPressed() {
@@ -51,11 +76,31 @@ class EditProfileViewController: UIViewController {
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         imagePicker.sourceType = .photoLibrary
+        present(imagePicker, animated: true, completion: nil)
+
         dismissBottomSheet()
         isEditButtonPressed = false
         
-        present(imagePicker, animated: true, completion: nil)
 
+    }
+    
+    @objc func doneButtonPressed() {
+        guard let usernamePut = contentView.usernameTextField.text else { return }
+        guard let namePut = contentView.nameTextField.text else { return }
+        guard let bioPut = contentView.bioTextField.text else { return }
+        
+        editProfileProtocol.setData(username: usernamePut, name: namePut, bio: bioPut)
+        
+        editProfileProtocol.setDataResult = { [weak self] result in
+            switch result {
+            case .success:
+                DispatchQueue.main.async {
+                    self?.dismiss(animated: true)
+                }
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
     
     func setupTapGesture() {

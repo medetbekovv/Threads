@@ -14,7 +14,7 @@ class AuthManager {
     private let accessTokenKey = "AccessToken"
     private let refreshTokenKey = "RefreshToken"
 
-    var accesToken : String? {
+    var accessToken : String? {
         get {
             return UserDefaults.standard.string(forKey: accessTokenKey)
         }

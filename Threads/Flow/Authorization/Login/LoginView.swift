@@ -29,7 +29,7 @@ class LoginView : BaseView {
     
      lazy var emailTextFieldEmail : UITextField = {
         let tf = UITextField()
-        tf.placeholder = "Your email"
+        tf.placeholder = "Your name"
         tf.layer.cornerRadius = 8
         tf.backgroundColor = UIColor(red: 239/255, green: 239/255, blue: 239/255, alpha: 1)
         tf.layer.borderColor = UIColor(red: 191/255, green: 194/255, blue: 196/255, alpha: 1).cgColor
@@ -236,7 +236,7 @@ class LoginView : BaseView {
             make.top.equalTo(logInButton.snp.bottom).offset(flexibleHeight(to: 33))
             make.leading.equalToSuperview().offset(flexibleWidth(to: 21))
             make.height.equalTo(flexibleWidth(to: 1))
-            make.width.equalTo(flexibleWidth(to: 154))
+            make.width.equalTo(flexibleWidth(to: 153))
         }
         
         or.snp.makeConstraints { make in

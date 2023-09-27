@@ -10,7 +10,7 @@ import SnapKit
 
 class ProfileView : BaseView {
     
-    private lazy var userImage : UIImageView = {
+     lazy var userImage : UIImageView = {
         let image = UIImageView()
         image.layer.cornerRadius = flexibleHeight(to: 100)
         image.image = UIImage(named: "profilePhoto")
@@ -18,21 +18,21 @@ class ProfileView : BaseView {
         return image
     }()
     
-    private lazy var title : UILabel = {
+     lazy var professionalLabel : UILabel = {
         let label = UILabel()
         label.text = "Design lead"
         label.font = R.font.sfProDisplayBold(size: 24)
         return label
     }()
     
-    private lazy var subTitle : UILabel = {
+     lazy var nickNameLabel : UILabel = {
         let label = UILabel()
         label.text = "malevicz"
         label.font = R.font.sfProDisplayBold(size: 14)
         return label
     }()
     
-    private lazy var threadsNet : UIButton = {
+     lazy var threadsNet : UIButton = {
         let button = UIButton()
         button.setTitle("threads.net", for: .normal)
         button.titleLabel?.font = R.font.sfProDisplayBlack(size: 11)
@@ -42,7 +42,7 @@ class ProfileView : BaseView {
         return button
     }()
     
-    private lazy var follows : UILabel = {
+     lazy var follows : UILabel = {
         let label = UILabel()
         label.text = "18 followers"
         label.font = R.font.sfProDisplayLight(size: 15)
@@ -62,7 +62,7 @@ class ProfileView : BaseView {
         return button
     }()
     
-    private lazy var shareProfieButton : UIButton = {
+     lazy var shareProfieButton : UIButton = {
         let button = UIButton()
         button.setTitle("Share profile", for: .normal)
         button.titleLabel?.font = R.font.sfProDisplayMedium(size: 15)
@@ -121,8 +121,8 @@ class ProfileView : BaseView {
         
     override func setupViews() {
         addSubview(userImage)
-        addSubview(title)
-        addSubview(subTitle)
+        addSubview(professionalLabel)
+        addSubview(nickNameLabel)
         addSubview(threadsNet)
         addSubview(follows)
         addSubview(editButton)
@@ -142,26 +142,26 @@ class ProfileView : BaseView {
             make.width.equalTo(flexibleWidth(to: 70))
         }
         
-        title.snp.makeConstraints { make in
+        professionalLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(flexibleHeight(to: 126))
             make.leading.equalToSuperview().offset(flexibleWidth(to: 16))
             make.height.equalTo(flexibleHeight(to: 22))
         }
         
-        subTitle.snp.makeConstraints { make in
-            make.top.equalTo(title.snp.bottom).offset(flexibleHeight(to: 14))
+        nickNameLabel.snp.makeConstraints { make in
+            make.top.equalTo(professionalLabel.snp.bottom).offset(flexibleHeight(to: 14))
             make.leading.equalToSuperview().offset(flexibleWidth(to: 16))
             make.height.equalTo(flexibleHeight(to: 18))
         }
         
         threadsNet.snp.makeConstraints { make in
-            make.top.equalTo(title.snp.bottom).offset(flexibleHeight(to: 10))
-            make.leading.equalTo(subTitle.snp.trailing).offset(flexibleWidth(to: 4))
+            make.top.equalTo(professionalLabel.snp.bottom).offset(flexibleHeight(to: 10))
+            make.leading.equalTo(nickNameLabel.snp.trailing).offset(flexibleWidth(to: 4))
             make.width.equalTo(flexibleWidth(to: 67))
         }
         
         follows.snp.makeConstraints { make in
-            make.top.equalTo(subTitle.snp.bottom).offset(flexibleHeight(to: 16))
+            make.top.equalTo(nickNameLabel.snp.bottom).offset(flexibleHeight(to: 16))
             make.leading.equalToSuperview().offset(flexibleWidth(to: 16))
             make.height.equalTo(flexibleHeight(to: 18))
         }

@@ -39,10 +39,10 @@ class LoginViewController : BaseViewController {
     }
     
     @objc func forgotButtonTapped() {
-        let vc = ForgotPasswordViewController(forgotProtocol: ForgotPasswordViewModel())
+        let vc = ForgotPasswordViewController()
         vc.modalPresentationStyle = .fullScreen
         self.navigationController?.pushViewController(vc, animated: true)
-        
+
     }
     
     @objc func signupButtonTapped() {
@@ -54,11 +54,11 @@ class LoginViewController : BaseViewController {
     
     @objc func loginButtonTapped() {
         
-        guard let email = contentView.emailTextFieldEmail.text , let password = contentView.passwordTextField.text else {
+        guard let username = contentView.emailTextFieldEmail.text , let password = contentView.passwordTextField.text else {
             print("Email or password is empty")
             return
         }
-        loginProtocol.login(email: email, password: password)
+        loginProtocol.login(username: username, password: password)
         loginProtocol.loginResult = { [weak self] result in
             switch result {
             case.success:
@@ -70,8 +70,9 @@ class LoginViewController : BaseViewController {
                 }
             case.failure(let error):
                 print("login failed with error: \(error)")
+                self?.showErrorAlert(message: "Введены неверные данные. Попробуйте еще раз.")
                 
-       
+          
             }
         }
    
@@ -79,7 +80,7 @@ class LoginViewController : BaseViewController {
     
     func showErrorAlert(message : String) {
         let alertController = UIAlertController(title: "Неверные данные", message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        let okAction = UIAlertAction(title: "OK", style: .default)
         alertController.addAction(okAction)
         self.present(alertController, animated: true)
     }

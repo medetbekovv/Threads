@@ -45,8 +45,6 @@ class SignUpViewModel : SignUpProtocol{
             print(error)
         }
         
-        
-        
         apiService.post(endpoint: "api/user/register/", parameters: parameters) { [weak self] result in
             DispatchQueue.main.async {
                 switch result {
@@ -57,6 +55,7 @@ class SignUpViewModel : SignUpProtocol{
                     self?.registerResult?(.success(data))
                     print(data)
                 case.failure(let error):
+                    print(error)
                     let errorMessage = "Failed register number: \(error.localizedDescription)"
                     print(errorMessage)
                     self?.registerResult?(.failure(error))
@@ -65,28 +64,7 @@ class SignUpViewModel : SignUpProtocol{
             }
         }
         
-//        apiService.post(endpoint: "api/user/register/", parameters: parameters) { [weak self] result in
-//            DispatchQueue.main.async {
-//                switch result {
-//                case .success(let data):
-//                     let decoder = JSONDecoder()
-//                    if let tokenResponse = try? decoder.decode(TokenResponse.self, from: data) {
-//                        AuthManager.shared.accesToken = tokenResponse.access
-//                        print(tokenResponse.access)
-//
-//                        self?.isRegistered = true
-//                        self?.registerResult?(.success(data))
-//                    }
-//                case .failure(let error):
-//                    let errorMessage = "Failed register number: \(error)"
-//                    print(errorMessage)
-//                    self?.registerResult?(.failure(error))
-//                    print(error)
-//                }
-//            }
-//        }
-                                          
-        }
+    }
   
     
     private func isValidEmail(_ email: String) -> Bool {

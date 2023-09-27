@@ -55,13 +55,53 @@ class SignUpViewController: BaseViewController {
     
         signUpProtocol.register(email: email, username: username, password: password, password2: password2)
         
-        
-        if signUpProtocol.isRegistered == true {
-            let vc = LoginViewController(loginProtocol: LoginViewModel())
-            navigationController?.pushViewController(vc, animated: true)
+        if email.isEmpty {
+            showErrorAlert(message: "Требуется почта")
         }
         
+        if !email.contains("@") {
+            showErrorAlert(message: "Неверный формат почты")
+        }
+        
+        if username.isEmpty {
+            self.showErrorAlert(message: "Требуется никнейм")
+        }
+        
+        if password != password2 {
+            self.showErrorAlert(message: "Пароли не совпадают")
+        }
+        
+        
+        
+//        if signUpProtocol.isRegistered == true {
+//            let vc = LoginViewController(loginProtocol: LoginViewModel())
+//            navigationController?.pushViewController(vc, animated: true)
+//        }
+        
+        if !email.isEmpty && email.contains("@") && !username.isEmpty && password == password2 {
+            signUpProtocol.registerResult = { [weak self] result in
+                switch result {
+            case .success:
+                    DispatchQueue.main.async {
+                        let vc = LoginViewController(loginProtocol: LoginViewModel())
+                        self?.navigationController?.pushViewController(vc, animated: true)
+                    }
+            case .failure(let error):
+                    print("Register failed with error: \(error)")
+                        self?.showErrorAlert(message: "Этот никнейм уже занят.")
+                }
+            }
+        }
 
+        
+
+    }
+    
+    func showErrorAlert(message : String) {
+        let alertController = UIAlertController(title: "Неверные данные", message: message, preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "OK", style: .default)
+        alertController.addAction(okButton)
+        self.present(alertController, animated: true)
     }
     
     @objc func backPressed() {

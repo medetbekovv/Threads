@@ -30,7 +30,7 @@ class OTPViewModel : OTPProtocol {
     func otp(code: String) {
         let parameters: [String : Any] = ["code": code]
         
-        guard let token = AuthManager.shared.accesToken else { return }
+        guard let token = AuthManager.shared.accessToken else { return }
         
         apiService.postToken(enpoid: "api/user/otp_verificaton/", parameters: parameters, bearerToken: token) { [weak self] (result) in
             DispatchQueue.main.async {

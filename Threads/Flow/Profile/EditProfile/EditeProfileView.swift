@@ -27,6 +27,13 @@ class EditProfileView: UIView {
         return label
     }()
     
+    lazy var doneButton : UIButton = {
+        let button = UIButton()
+        button.setTitleColor(UIColor(red: 153/255, green: 153/255, blue: 153/255, alpha: 1), for: .normal)
+        button.setTitle("Done", for: .normal)
+        return button
+    }()
+    
     private lazy var topLineView : UIView = {
         let view = UIView()
         view.backgroundColor = UIColor(red: 217/255, green: 217/255, blue: 217/255, alpha: 1)
@@ -68,7 +75,7 @@ class EditProfileView: UIView {
         return label
     }()
     
-    private lazy var usernameTextField: BorderedTextField = {
+     lazy var usernameTextField: BorderedTextField = {
         let field = BorderedTextField()
         
         return field
@@ -81,7 +88,7 @@ class EditProfileView: UIView {
         return label
     }()
     
-    private lazy var nameTextField: BorderedTextField = {
+     lazy var nameTextField: BorderedTextField = {
         let field = BorderedTextField()
         return field
     }()
@@ -94,7 +101,7 @@ class EditProfileView: UIView {
         return label
     }()
     
-    private lazy var bioTextField: BorderedTextField = {
+     lazy var bioTextField: BorderedTextField = {
         let field = BorderedTextField()
         field.placeholder = "+ Write bio"
         
@@ -109,7 +116,7 @@ class EditProfileView: UIView {
         return label
     }()
     
-    private lazy var linkTextField: BorderedTextField = {
+     lazy var linkTextField: BorderedTextField = {
         let field = BorderedTextField()
         field.placeholder = "+ Add link"
         
@@ -124,7 +131,7 @@ class EditProfileView: UIView {
         return label
     }()
     
-    private lazy var toggleProfilePrivat: UISwitch = {
+     lazy var toggleProfilePrivat: UISwitch = {
         let toggle = UISwitch()
         toggle.onTintColor = .black
 
@@ -162,6 +169,7 @@ class EditProfileView: UIView {
     func setupViews() {
         addSubview(exiteButton)
         addSubview(editeProfileLabel)
+        addSubview(doneButton)
         addSubview(topLineView)
         addSubview(profilePicture)
         addSubview(editPhotoButton)
@@ -192,6 +200,12 @@ class EditProfileView: UIView {
             make.top.equalToSuperview().offset(flexibleHeight(to: 76))
             make.leading.equalTo(exiteButton.snp.trailing).offset(flexibleWidth(to: 16))
             make.height.equalTo(flexibleHeight(to: 24))
+        }
+        
+        doneButton.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(flexibleHeight(to: 76))
+            make.trailing.equalToSuperview().offset(flexibleWidth(to: -16))
+            make.height.equalTo(flexibleHeight(to: 18))
         }
         
         
