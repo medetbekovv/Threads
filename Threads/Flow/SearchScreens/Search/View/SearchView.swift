@@ -15,7 +15,7 @@ class SearchView : BaseView {
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.text = "Search"
-        label.font = R.font.sfProDisplayBold(size: 34)
+        label.font = R.font.sfProDisplayBold(size: 43)
         
         return label
     }()
@@ -30,7 +30,7 @@ class SearchView : BaseView {
         
         return bar
     }()
-
+    
     func createEmptyLeftView(size: CGSize) -> UIView {
         let leftView = UIView(frame: CGRect(origin: .zero, size: size))
         leftView.backgroundColor = .clear
@@ -43,7 +43,7 @@ class SearchView : BaseView {
         tableView.backgroundColor = .clear
         tableView.separatorStyle = .none
         tableView.register(CustomSearchCell.self, forCellReuseIdentifier: "MyCellReuseIdentifier")
-
+        
         return tableView
     }()
     

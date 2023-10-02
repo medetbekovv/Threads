@@ -588,22 +588,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "132C361F-83D1-4404-88C2-D104E6596D66"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Threads/Flow/Profile/Profile/ViewController/ProfileViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "getProfileData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "4CAD3061-BE10-49DD-ABB8-150FB3913115"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -615,6 +599,53 @@
             endingLineNumber = "70"
             landmarkName = "parseUserUImageData(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4CAD3061-BE10-49DD-ABB8-150FB3913115 - 73dd1cbee3ff20e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Threads.ProfileViewController.parseUserUImageData(Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "Threads"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sultan/Desktop/Threads/Threads/Flow/Profile/Profile/ViewController/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "228">
+               </Location>
+               <Location
+                  uuid = "4CAD3061-BE10-49DD-ABB8-150FB3913115 - 73dd1cbee3ff20e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Threads.ProfileViewController.parseUserUImageData(Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "Threads"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sultan/Desktop/Threads/Threads/Flow/Profile/Profile/ViewController/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "264">
+               </Location>
+               <Location
+                  uuid = "4CAD3061-BE10-49DD-ABB8-150FB3913115 - fc787d978f4b3eca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Threads.ProfileViewController.parseUserUImageData(Threads.PhotoProfile) -&gt; ()"
+                  moduleName = "Threads"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sultan/Desktop/Threads/Threads/Flow/Profile/Profile/ViewController/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "264">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -627,28 +658,13 @@
             filePath = "Threads/Flow/Profile/Profile/ViewController/ProfileViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "parseUserUImageData(_:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "0962BB47-FDD7-43FF-AFA2-41E91B33EF65 - 73dd1cbee3ff2083"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Threads.ProfileViewController.parseUserUImageData(Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
-                  moduleName = "Threads"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sultan/Desktop/Threads/Threads/Flow/Profile/Profile/ViewController/ProfileViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "74"
-                  endingLineNumber = "74"
-                  offsetFromSymbolStart = "824">
-               </Location>
-               <Location
-                  uuid = "0962BB47-FDD7-43FF-AFA2-41E91B33EF65 - 1c8943a8018bbbfb"
+                  uuid = "0962BB47-FDD7-43FF-AFA2-41E91B33EF65 - 1c8943a8018bbbd8"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -658,9 +674,84 @@
                   urlString = "file:///Users/sultan/Desktop/Threads/Threads/Flow/Profile/Profile/ViewController/ProfileViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "75"
-                  endingLineNumber = "75"
-                  offsetFromSymbolStart = "48">
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "0962BB47-FDD7-43FF-AFA2-41E91B33EF65 - 73dd1cbee3ff1f41"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Threads.ProfileViewController.parseUserUImageData(Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "Threads"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sultan/Desktop/Threads/Threads/Flow/Profile/Profile/ViewController/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "1256">
+               </Location>
+               <Location
+                  uuid = "0962BB47-FDD7-43FF-AFA2-41E91B33EF65 - 1c8943a8018bbbb9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in Threads.ProfileViewController.parseUserUImageData(Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "Threads"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sultan/Desktop/Threads/Threads/Flow/Profile/Profile/ViewController/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "0962BB47-FDD7-43FF-AFA2-41E91B33EF65 - fc787d978f4b016d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Threads.ProfileViewController.parseUserUImageData(Threads.PhotoProfile) -&gt; ()"
+                  moduleName = "Threads"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sultan/Desktop/Threads/Threads/Flow/Profile/Profile/ViewController/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "816">
+               </Location>
+               <Location
+                  uuid = "0962BB47-FDD7-43FF-AFA2-41E91B33EF65 - b4f49c55bbce5494"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in Threads.ProfileViewController.parseUserUImageData(Threads.PhotoProfile) -&gt; ()"
+                  moduleName = "Threads"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sultan/Desktop/Threads/Threads/Flow/Profile/Profile/ViewController/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "0962BB47-FDD7-43FF-AFA2-41E91B33EF65 - fc787d978f4b016d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Threads.ProfileViewController.parseUserUImageData(Threads.PhotoProfile) -&gt; ()"
+                  moduleName = "Threads"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sultan/Desktop/Threads/Threads/Flow/Profile/Profile/ViewController/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "912">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -675,10 +766,57 @@
             filePath = "Threads/Flow/Profile/Profile/ViewController/ProfileViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "parseUserUImageData(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4454C248-5D97-4CD2-9E5C-236043AA724E - 1c8943a8018bbb86"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in Threads.ProfileViewController.parseUserUImageData(Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "Threads"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sultan/Desktop/Threads/Threads/Flow/Profile/Profile/ViewController/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "340">
+               </Location>
+               <Location
+                  uuid = "4454C248-5D97-4CD2-9E5C-236043AA724E - 1c8943a8018bbb86"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in Threads.ProfileViewController.parseUserUImageData(Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "Threads"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sultan/Desktop/Threads/Threads/Flow/Profile/Profile/ViewController/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "236">
+               </Location>
+               <Location
+                  uuid = "4454C248-5D97-4CD2-9E5C-236043AA724E - b4f49c55bbce54ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in Threads.ProfileViewController.parseUserUImageData(Threads.PhotoProfile) -&gt; ()"
+                  moduleName = "Threads"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sultan/Desktop/Threads/Threads/Flow/Profile/Profile/ViewController/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "236">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -691,10 +829,73 @@
             filePath = "Threads/Flow/Profile/Profile/ViewController/ProfileViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "parseUserUImageData(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7AB5F792-D0B5-43BD-966C-3623B733FA90 - 1c8943a8018bbb67"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in Threads.ProfileViewController.parseUserUImageData(Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "Threads"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sultan/Desktop/Threads/Threads/Flow/Profile/Profile/ViewController/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "380">
+               </Location>
+               <Location
+                  uuid = "7AB5F792-D0B5-43BD-966C-3623B733FA90 - 1c8943a8018bbb67"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in Threads.ProfileViewController.parseUserUImageData(Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "Threads"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sultan/Desktop/Threads/Threads/Flow/Profile/Profile/ViewController/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "340">
+               </Location>
+               <Location
+                  uuid = "7AB5F792-D0B5-43BD-966C-3623B733FA90 - b4f49c55bbce544a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in Threads.ProfileViewController.parseUserUImageData(Threads.PhotoProfile) -&gt; ()"
+                  moduleName = "Threads"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sultan/Desktop/Threads/Threads/Flow/Profile/Profile/ViewController/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "340">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ED038697-137E-41B8-A4CD-0CF4CED88C9A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Threads/Flow/Profile/Profile/ViewModel/ProfileUImageViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "ProfileUImageViewModel"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

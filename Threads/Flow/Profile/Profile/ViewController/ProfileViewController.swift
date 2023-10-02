@@ -67,13 +67,17 @@ class ProfileViewController : UIViewController {
         }
     }
     
-    func parseUserUImageData(_ userUImageData: [String: Any]){
-        if let photo = userUImageData["photo"] as? String,
+    func parseUserUImageData(_ userUImageData: PhotoProfile){
+        print("1")
+        print(userUImageData)
+        if let photo = userUImageData.photo,
             let imageData = Data(base64Encoded: photo) {
              let image = UIImage(data: imageData)
              DispatchQueue.main.async {
+                 print("2")
                  self.contentView.userImage.image = image
                  self.photo = image
+                 print(image)
              }
          }
     }

@@ -52,6 +52,7 @@
 		2F95527C2AC7056300DEC7A5 /* EditeProfilePhotoSetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95527B2AC7056300DEC7A5 /* EditeProfilePhotoSetViewModel.swift */; };
 		2F95527F2AC70BBA00DEC7A5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2F95527E2AC70BBA00DEC7A5 /* Alamofire */; };
 		2F9552862ACAB05200DEC7A5 /* ProfileUImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9552852ACAB05200DEC7A5 /* ProfileUImageViewModel.swift */; };
+		2F95A5D82ACB05DE00159534 /* PhotoProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95A5D72ACB05DE00159534 /* PhotoProfile.swift */; };
 		2FB549602A8CBF5300DB2F7C /* EditeProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB5495F2A8CBF5300DB2F7C /* EditeProfileView.swift */; };
 		2FB549622A8CBF6200DB2F7C /* EditeProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB549612A8CBF6200DB2F7C /* EditeProfileViewController.swift */; };
 		2FB549642A8E243F00DB2F7C /* CustomProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB549632A8E243F00DB2F7C /* CustomProfileCell.swift */; };
@@ -126,6 +127,7 @@
 		2F95521C2ABF123700DEC7A5 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		2F95527B2AC7056300DEC7A5 /* EditeProfilePhotoSetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditeProfilePhotoSetViewModel.swift; sourceTree = "<group>"; };
 		2F9552852ACAB05200DEC7A5 /* ProfileUImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUImageViewModel.swift; sourceTree = "<group>"; };
+		2F95A5D72ACB05DE00159534 /* PhotoProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoProfile.swift; sourceTree = "<group>"; };
 		2FB5495F2A8CBF5300DB2F7C /* EditeProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditeProfileView.swift; sourceTree = "<group>"; };
 		2FB549612A8CBF6200DB2F7C /* EditeProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditeProfileViewController.swift; sourceTree = "<group>"; };
 		2FB549632A8E243F00DB2F7C /* CustomProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProfileCell.swift; sourceTree = "<group>"; };
@@ -200,8 +202,7 @@
 		2F156E3C2AA8B37100AB5EBA /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				2F156E3F2AA8B3B700AB5EBA /* SearchView.swift */,
-				2F156E412AA8B3C800AB5EBA /* CustomSearchCell.swift */,
+				2F95A5D52ACAF8C500159534 /* View */,
 				2FD6669F2ABC66DA00C902FC /* SearchViewController.swift */,
 			);
 			path = Search;
@@ -382,6 +383,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		2F95A5D52ACAF8C500159534 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F156E412AA8B3C800AB5EBA /* CustomSearchCell.swift */,
+				2F156E3F2AA8B3B700AB5EBA /* SearchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2FB5495E2A8CBF3600DB2F7C /* EditProfile */ = {
 			isa = PBXGroup;
 			children = (
@@ -447,6 +457,7 @@
 			isa = PBXGroup;
 			children = (
 				2FD6669B2AB8D3FC00C902FC /* TokenResponse.swift */,
+				2F95A5D72ACB05DE00159534 /* PhotoProfile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -743,6 +754,7 @@
 				2FE3A0602A80D99300AA4A93 /* ForgotPasswordViewController.swift in Sources */,
 				2F45BB0B2A7FF07C00099377 /* Extension - Color.swift in Sources */,
 				2F45BAB32A7A575400099377 /* AppDelegate.swift in Sources */,
+				2F95A5D82ACB05DE00159534 /* PhotoProfile.swift in Sources */,
 				2FE3A0742A8A1BE900AA4A93 /* ProfileView.swift in Sources */,
 				2FB5496E2A8F74F400DB2F7C /* CustomBottomSheet.swift in Sources */,
 				2F45BAB52A7A575400099377 /* SceneDelegate.swift in Sources */,
