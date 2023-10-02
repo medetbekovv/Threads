@@ -13,13 +13,15 @@ class ProfileViewController : UIViewController {
     let contentView = ProfileView()
     
     var profileProtocol: ProfileProtocol
+    var profileUImageProtocol: ProfileUImageProtocol
     var username : String?
     var name : String?
     var bio : String?
     var photo: UIImage?
     
-    init(profileProtocol: ProfileProtocol) {
+    init(profileProtocol: ProfileProtocol,profileUImageProtocol: ProfileUImageProtocol) {
         self.profileProtocol = profileProtocol
+        self.profileUImageProtocol = profileUImageProtocol
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -30,7 +32,7 @@ class ProfileViewController : UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         getProfileData()
-        
+        getProfileUImageData()
     }
         
     override func viewDidLoad() {
@@ -47,6 +49,33 @@ class ProfileViewController : UIViewController {
         setupViews()
         setupConstraints()
         getProfileData()
+        getProfileUImageData()
+    }
+    
+    func getProfileUImageData() {
+        DispatchQueue.main.async {
+            self.profileUImageProtocol.fetchUserUImage { [weak self] (result) in
+                switch result {
+                case .success(let uimageData):
+                    self?.parseUserUImageData(uimageData)
+                    print(" UImage done ")
+                case .failure(let error):
+                    print("Failed UImage to fetch user data: ", error)
+
+                }
+            }
+        }
+    }
+    
+    func parseUserUImageData(_ userUImageData: [String: Any]){
+        if let photo = userUImageData["photo"] as? String,
+            let imageData = Data(base64Encoded: photo) {
+             let image = UIImage(data: imageData)
+             DispatchQueue.main.async {
+                 self.contentView.userImage.image = image
+                 self.photo = image
+             }
+         }
     }
     
     func getProfileData() {
@@ -55,6 +84,7 @@ class ProfileViewController : UIViewController {
                 switch result {
                 case .success(let userData):
                     self?.parseUserData(userData)
+                    print(userData)
                 case .failure(let error):
                     print("Failed to fetch user data: ", error)
                 }
@@ -77,19 +107,28 @@ class ProfileViewController : UIViewController {
             }
         }
         
-        if let photo = userData["photo"] as? String,
-           let photoURL = URL(string: photo) {
-            DispatchQueue.global().async {
-                if let imageData = try? Data(contentsOf: photoURL),
-                   let image = UIImage(data: imageData){
-                    self.contentView.userImage.image = image
-                    self.photo = image
-                }
-            }
-        }
+//        if let photo = userData["photo"] as? String,
+//           let photoURL = URL(string: photo) {
+//            DispatchQueue.global().async {
+//                if let imageData = try? Data(contentsOf: photoURL),
+//                   let image = UIImage(data: imageData){
+//                    self.contentView.userImage.image = image
+//                    self.photo = image
+//                }
+//            }
+//        }
+//        if let photo = userData["photo"] as? String,
+//           let imageData = Data(base64Encoded: photo) {
+//            let image = UIImage(data: imageData)
+//            DispatchQueue.main.async {
+//                self.contentView.userImage.image = image
+//                self.photo = image
+//            }
+//        }
         self.username = userData["username"] as? String
         self.name = userData["name"] as? String
         self.bio = userData["bio"] as? String
+
     }
     
     
@@ -108,7 +147,7 @@ class ProfileViewController : UIViewController {
     
     
     @objc private func editeButtonNavigation() {
-        let vc = EditProfileViewController(editProfileProtocol: EditProfileViewModel(),
+        let vc = EditProfileViewController(editProfileProtocol: EditProfileViewModel(), editProfilePhotoProtocol: EditProfileSetPhotoViewModel(),
                                            username: username ,
                                            name: name,
                                            bio: bio,

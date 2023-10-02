@@ -20,7 +20,7 @@ class TabBarController : UITabBarController {
                            createController(viewController: SearchViewController(), imageName: "search"),
                            createController(viewController: UIViewController(), imageName: "write"),
                            createController(viewController: UIViewController(), imageName: "activity"),
-                           createController(viewController: ProfileViewController(profileProtocol: ProfileViewModel()), imageName: "profile")
+                           createController(viewController: ProfileViewController(profileProtocol: ProfileViewModel(), profileUImageProtocol: ProfileUImageViewModel()), imageName: "profile")
         ]
         
     }
