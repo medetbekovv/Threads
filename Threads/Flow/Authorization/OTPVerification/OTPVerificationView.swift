@@ -30,7 +30,10 @@ class OTPVerificationView : BaseView {
     lazy var otpView : AEOTPTextField = {
         let otp = AEOTPTextField()
         otp.otpCornerRaduis = 8
+        otp.otpFilledBorderColor = .clear
         otp.textColor = .black
+//        otp.otpBackgroundColor = .blue
+//        otp.otpFilledBackgroundColor = .blue
         otp.configure(with: 4)
         
         return otp

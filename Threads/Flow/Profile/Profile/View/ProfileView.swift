@@ -12,7 +12,7 @@ class ProfileView : BaseView {
     
      lazy var userImage : UIImageView = {
         let image = UIImageView()
-        image.layer.cornerRadius = flexibleHeight(to: 100)
+//        image.layer.cornerRadius = flexibleHeight(to: 100)
         image.image = UIImage(named: "profilePhoto")
         
         return image
@@ -101,18 +101,18 @@ class ProfileView : BaseView {
         return label
     }()
     
-    private lazy var tableView : UITableView = {
-        let tableView = UITableView()
-        tableView.backgroundColor = .clear
-        tableView.separatorStyle = .none
-        tableView.register(CustomProfileCell.self, forCellReuseIdentifier: "cell")
-        return tableView
-    }()
+//    private lazy var tableView : UITableView = {
+//        let tableView = UITableView()
+//        tableView.backgroundColor = .clear
+//        tableView.separatorStyle = .none
+//        tableView.register(CustomProfileCell.self, forCellReuseIdentifier: "cell")
+//        return tableView
+//    }()
     
     override init(frame: CGRect) {
         super .init(frame: frame)
-        tableView.dataSource = self
-        tableView.delegate = self
+//        tableView.dataSource = self
+//        tableView.delegate = self
         backgroundColor = .white
 //        tableView.estimatedRowHeight = 105
         setupViews()
@@ -131,7 +131,7 @@ class ProfileView : BaseView {
         addSubview(lineView)
         addSubview(repostImage)
         addSubview(repostLabel)
-        addSubview(tableView)
+//        addSubview(tableView)
     }
     override func setupConstraints() {
         
@@ -204,12 +204,12 @@ class ProfileView : BaseView {
             make.leading.equalTo(repostImage.snp.trailing).inset(flexibleWidth(to: -10))
         }
         
-        tableView.snp.makeConstraints{ make in
-            make.top.equalTo(repostLabel.snp.bottom).offset(flexibleHeight(to: 4))
-            make.leading.equalToSuperview()
-            make.trailing.equalToSuperview()
-            make.bottom.equalToSuperview().inset(flexibleHeight(to: 85))
-        }
+//        tableView.snp.makeConstraints{ make in
+//            make.top.equalTo(repostLabel.snp.bottom).offset(flexibleHeight(to: 4))
+//            make.leading.equalToSuperview()
+//            make.trailing.equalToSuperview()
+//            make.bottom.equalToSuperview().inset(flexibleHeight(to: 85))
+//        }
         
         
         
@@ -224,27 +224,27 @@ class ProfileView : BaseView {
     
 }
 
-extension ProfileView : UITableViewDelegate , UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return model.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomProfileCell
-        cell.threadLabel.text = model[indexPath.row]
-//        if indexPath.row%2==0 {
-//            cell.backgroundColor = .green
-//        }
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
-    }
-    
-  
-    
-}
+//extension ProfileView : UITableViewDelegate , UITableViewDataSource {
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return model.count
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomProfileCell
+//        cell.threadLabel.text = model[indexPath.row]
+////        if indexPath.row%2==0 {
+////            cell.backgroundColor = .green
+////        }
+//        return cell
+//    }
+//
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return UITableView.automaticDimension
+//    }
+//
+//
+//
+//}
 
 //extension ProfileView : UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
 //    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

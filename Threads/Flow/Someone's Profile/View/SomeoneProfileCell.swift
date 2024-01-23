@@ -1,19 +1,18 @@
 //
-//  CustomCell.swift
+//  SomeoneProfileCell.swift
 //  Threads
 //
-//  Created by Sultan on 17/8/23.
+//  Created by Sultan on 3/10/23.
 //
 
 import UIKit
 import SnapKit
 
-class CustomProfileCell : UITableViewCell {
+class SomeoneProfileCell: UITableViewCell {
     
     private lazy var avatarImage : UIImageView = {
         let image = UIImageView()
         image.image = UIImage(named: "profilePhoto")
-        image.layer.cornerRadius = 35 * UIScreen.main.bounds.width / 393
         image.contentMode = .scaleAspectFit
         return image
     }()
@@ -162,14 +161,4 @@ class CustomProfileCell : UITableViewCell {
             make.leading.equalToSuperview().inset(flexibleWidth(to: 60))
             make.bottom.equalToSuperview()
         }
-    }
-        
-}
-
-
-
- 
-    
-
-    
-
+    }}

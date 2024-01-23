@@ -16,11 +16,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
-//        window?.rootViewController = LoginViewController()
+        window?.rootViewController = OTPVerificationViewController(otpProtocol: OTPViewModel())
 //        window?.rootViewController = UINavigationController(rootViewController:LoginViewController(loginProtocol: LoginViewModel()))
-        window?.rootViewController = UINavigationController(rootViewController:LoginViewController(loginProtocol: LoginViewModel()))
+//        window?.rootViewController = UINavigationController(rootViewController:LoginViewController(loginProtocol: LoginViewModel()))
 //      window?.rootViewController = UINavigationController(rootViewController:TabBarController())
-
+        
+//    window?.rootViewController = UINavigationController(rootViewController:ActivityViewController())
+//    window?.rootViewController = UINavigationController(rootViewController:ActivityViewController())
+//        window?.rootViewController = UINavigationController(rootViewController: TabBarController())
         
 
 //        let controller = EditeProfileViewController()

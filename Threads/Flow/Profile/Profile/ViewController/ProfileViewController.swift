@@ -68,18 +68,49 @@ class ProfileViewController : UIViewController {
     }
     
     func parseUserUImageData(_ userUImageData: PhotoProfile){
+
         print("1")
         print(userUImageData)
-        if let photo = userUImageData.photo,
-            let imageData = Data(base64Encoded: photo) {
-             let image = UIImage(data: imageData)
-             DispatchQueue.main.async {
-                 print("2")
-                 self.contentView.userImage.image = image
-                 self.photo = image
-                 print(image)
-             }
-         }
+
+        if let photoURLString = userUImageData.photo, let url = URL(string: photoURLString) {
+            print("Photo from backend: \(photoURLString)")
+
+            URLSession.shared.dataTask(with: url) {(data, response, error) in
+                if let data = data, let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        print("2")
+                        self.contentView.userImage.image = image
+                        self.photo = image
+                    }
+                } else if let error = error {
+                    print("Failed to load image: \(error)")
+                }
+            }
+            .resume()
+
+        } else {
+            print("Photo is nil or not a valid URL")
+
+        }
+        
+        
+//        print("1")
+//        print(userUImageData)
+//        if let photo = userUImageData.photo{
+//            print("Photo from backend: \(photo)")
+//
+//            if let imageData = Data(base64Encoded: photo){
+//                let image = UIImage(data: imageData)
+//                DispatchQueue.main.async {
+//                    print("2")
+//                    self.contentView.userImage.image = image
+//                    self.photo = image
+//                    print(image)
+//                }
+//            }
+//        } else {
+//            print("Photo is nil")
+//        }
     }
     
     func getProfileData() {

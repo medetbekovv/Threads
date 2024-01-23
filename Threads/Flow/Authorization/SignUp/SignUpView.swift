@@ -30,6 +30,7 @@ class SignUpView: BaseView {
      lazy var textFieldEmail : UITextField = {
         let tf = UITextField()
         tf.placeholder = "Your email"
+        tf.autocorrectionType = .no
         tf.layer.cornerRadius = 8
         tf.backgroundColor = UIColor(red: 239/255, green: 239/255, blue: 239/255, alpha: 1)
         tf.layer.borderColor = UIColor(red: 191/255, green: 194/255, blue: 196/255, alpha: 1).cgColor
@@ -46,6 +47,7 @@ class SignUpView: BaseView {
      lazy var textFieldName : UITextField = {
         let tf = UITextField()
         tf.placeholder = "Your name"
+        tf.autocorrectionType = .no
         tf.layer.cornerRadius = 8
         tf.backgroundColor = UIColor(red: 239/255, green: 239/255, blue: 239/255, alpha: 1)
         tf.layer.borderColor = UIColor(red: 191/255, green: 194/255, blue: 196/255, alpha: 1).cgColor
@@ -61,6 +63,7 @@ class SignUpView: BaseView {
      lazy var textFieldPassword : UITextField = {
         let tf = UITextField()
         tf.placeholder = "Password"
+        tf.autocorrectionType = .no
         tf.isSecureTextEntry = true
         tf.layer.cornerRadius = 8
         tf.backgroundColor = UIColor(red: 239/255, green: 239/255, blue: 239/255, alpha: 1)
@@ -88,6 +91,7 @@ class SignUpView: BaseView {
         let tf = UITextField()
         tf.placeholder = "Confirm password"
         tf.layer.cornerRadius = 8
+        tf.autocorrectionType = .no
         tf.isSecureTextEntry = true
         tf.backgroundColor = UIColor(red: 239/255, green: 239/255, blue: 239/255, alpha: 1)
         tf.layer.borderColor = UIColor(red: 191/255, green: 194/255, blue: 196/255, alpha: 1).cgColor

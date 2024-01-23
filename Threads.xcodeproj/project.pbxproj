@@ -50,9 +50,24 @@
 		2F45BB0B2A7FF07C00099377 /* Extension - Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45BB0A2A7FF07C00099377 /* Extension - Color.swift */; };
 		2F95521D2ABF123700DEC7A5 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95521C2ABF123700DEC7A5 /* ProfileViewModel.swift */; };
 		2F95527C2AC7056300DEC7A5 /* EditeProfilePhotoSetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95527B2AC7056300DEC7A5 /* EditeProfilePhotoSetViewModel.swift */; };
-		2F95527F2AC70BBA00DEC7A5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2F95527E2AC70BBA00DEC7A5 /* Alamofire */; };
 		2F9552862ACAB05200DEC7A5 /* ProfileUImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9552852ACAB05200DEC7A5 /* ProfileUImageViewModel.swift */; };
 		2F95A5D82ACB05DE00159534 /* PhotoProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95A5D72ACB05DE00159534 /* PhotoProfile.swift */; };
+		2F95A5DC2ACBE05600159534 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95A5DB2ACBE05600159534 /* SearchViewModel.swift */; };
+		2F95A5DF2ACC165300159534 /* SomeoneProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95A5DE2ACC165300159534 /* SomeoneProfileView.swift */; };
+		2F95A5E12ACC166800159534 /* SomeoneProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95A5E02ACC166800159534 /* SomeoneProfileViewController.swift */; };
+		2F95A5E52ACC1EC600159534 /* CustomBottomShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95A5E42ACC1EC600159534 /* CustomBottomShareSheet.swift */; };
+		2F95A5E72ACC255B00159534 /* SomeoneProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95A5E62ACC255B00159534 /* SomeoneProfileCell.swift */; };
+		2F95A5EA2ACC4D4C00159534 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95A5E92ACC4D4C00159534 /* ActivityViewController.swift */; };
+		2F95A5EC2ACC4D8100159534 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95A5EB2ACC4D8100159534 /* ActivityView.swift */; };
+		2F95A5EE2ACC4DDE00159534 /* CommentsActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95A5ED2ACC4DDE00159534 /* CommentsActivityCell.swift */; };
+		2F95A5F02ACC4DFB00159534 /* RequestsActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95A5EF2ACC4DFB00159534 /* RequestsActivityCell.swift */; };
+		2F95A5F42AD004DF00159534 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95A5F32AD004DF00159534 /* NetworkService.swift */; };
+		2F95A5F72AD571BA00159534 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 2F95A5F62AD571BA00159534 /* CombineMoya */; };
+		2F95A5F92AD571BA00159534 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 2F95A5F82AD571BA00159534 /* Moya */; };
+		2F95A5FB2AD571BA00159534 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 2F95A5FA2AD571BA00159534 /* ReactiveMoya */; };
+		2F95A5FD2AD571BA00159534 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 2F95A5FC2AD571BA00159534 /* RxMoya */; };
+		2F95A5FF2ADEB44E00159534 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95A5FE2ADEB44E00159534 /* HomeModel.swift */; };
+		2F95A6012ADEC30900159534 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95A6002ADEC30900159534 /* SearchModel.swift */; };
 		2FB549602A8CBF5300DB2F7C /* EditeProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB5495F2A8CBF5300DB2F7C /* EditeProfileView.swift */; };
 		2FB549622A8CBF6200DB2F7C /* EditeProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB549612A8CBF6200DB2F7C /* EditeProfileViewController.swift */; };
 		2FB549642A8E243F00DB2F7C /* CustomProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB549632A8E243F00DB2F7C /* CustomProfileCell.swift */; };
@@ -128,6 +143,18 @@
 		2F95527B2AC7056300DEC7A5 /* EditeProfilePhotoSetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditeProfilePhotoSetViewModel.swift; sourceTree = "<group>"; };
 		2F9552852ACAB05200DEC7A5 /* ProfileUImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUImageViewModel.swift; sourceTree = "<group>"; };
 		2F95A5D72ACB05DE00159534 /* PhotoProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoProfile.swift; sourceTree = "<group>"; };
+		2F95A5DB2ACBE05600159534 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		2F95A5DE2ACC165300159534 /* SomeoneProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeoneProfileView.swift; sourceTree = "<group>"; };
+		2F95A5E02ACC166800159534 /* SomeoneProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeoneProfileViewController.swift; sourceTree = "<group>"; };
+		2F95A5E42ACC1EC600159534 /* CustomBottomShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBottomShareSheet.swift; sourceTree = "<group>"; };
+		2F95A5E62ACC255B00159534 /* SomeoneProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeoneProfileCell.swift; sourceTree = "<group>"; };
+		2F95A5E92ACC4D4C00159534 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		2F95A5EB2ACC4D8100159534 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		2F95A5ED2ACC4DDE00159534 /* CommentsActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsActivityCell.swift; sourceTree = "<group>"; };
+		2F95A5EF2ACC4DFB00159534 /* RequestsActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsActivityCell.swift; sourceTree = "<group>"; };
+		2F95A5F32AD004DF00159534 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		2F95A5FE2ADEB44E00159534 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		2F95A6002ADEC30900159534 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
 		2FB5495F2A8CBF5300DB2F7C /* EditeProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditeProfileView.swift; sourceTree = "<group>"; };
 		2FB549612A8CBF6200DB2F7C /* EditeProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditeProfileViewController.swift; sourceTree = "<group>"; };
 		2FB549632A8E243F00DB2F7C /* CustomProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProfileCell.swift; sourceTree = "<group>"; };
@@ -164,8 +191,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F95A5FD2AD571BA00159534 /* RxMoya in Frameworks */,
+				2F95A5F72AD571BA00159534 /* CombineMoya in Frameworks */,
+				2F95A5FB2AD571BA00159534 /* ReactiveMoya in Frameworks */,
 				06EB03618FB1766232DE1A68 /* Pods_Threads.framework in Frameworks */,
-				2F95527F2AC70BBA00DEC7A5 /* Alamofire in Frameworks */,
+				2F95A5F92AD571BA00159534 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +234,8 @@
 			children = (
 				2F95A5D52ACAF8C500159534 /* View */,
 				2FD6669F2ABC66DA00C902FC /* SearchViewController.swift */,
+				2F95A5DB2ACBE05600159534 /* SearchViewModel.swift */,
+				2F95A6002ADEC30900159534 /* SearchModel.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -212,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				2F156E442AA8B69800AB5EBA /* Service.swift */,
+				2F95A5F32AD004DF00159534 /* NetworkService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -276,6 +309,8 @@
 		2F45BACC2A7A5CD800099377 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
+				2F95A5E82ACC4D1F00159534 /* ActivityScreens */,
+				2F95A5DD2ACC034C00159534 /* Someone's Profile */,
 				2F156E3B2AA8B35700AB5EBA /* SearchScreens */,
 				2F156E0F2AA5CCBA00AB5EBA /* HomeScreens */,
 				2FE3A0702A8A111300AA4A93 /* Authorization */,
@@ -392,6 +427,43 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		2F95A5DD2ACC034C00159534 /* Someone's Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2F95A5E22ACC166D00159534 /* View */,
+				2F95A5E02ACC166800159534 /* SomeoneProfileViewController.swift */,
+			);
+			path = "Someone's Profile";
+			sourceTree = "<group>";
+		};
+		2F95A5E22ACC166D00159534 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F95A5DE2ACC165300159534 /* SomeoneProfileView.swift */,
+				2F95A5E62ACC255B00159534 /* SomeoneProfileCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F95A5E32ACC1E9900159534 /* CustomBottomShareSheet */ = {
+			isa = PBXGroup;
+			children = (
+				2F95A5E42ACC1EC600159534 /* CustomBottomShareSheet.swift */,
+			);
+			path = CustomBottomShareSheet;
+			sourceTree = "<group>";
+		};
+		2F95A5E82ACC4D1F00159534 /* ActivityScreens */ = {
+			isa = PBXGroup;
+			children = (
+				2F95A5E92ACC4D4C00159534 /* ActivityViewController.swift */,
+				2F95A5EB2ACC4D8100159534 /* ActivityView.swift */,
+				2F95A5ED2ACC4DDE00159534 /* CommentsActivityCell.swift */,
+				2F95A5EF2ACC4DFB00159534 /* RequestsActivityCell.swift */,
+			);
+			path = ActivityScreens;
+			sourceTree = "<group>";
+		};
 		2FB5495E2A8CBF3600DB2F7C /* EditProfile */ = {
 			isa = PBXGroup;
 			children = (
@@ -413,6 +485,7 @@
 		2FB549682A8F67F200DB2F7C /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				2F95A5E32ACC1E9900159534 /* CustomBottomShareSheet */,
 				2FB5496C2A8F74D600DB2F7C /* CustomBottomSheet */,
 				2FB549692A8F6B2100DB2F7C /* BorderedTextField */,
 			);
@@ -441,6 +514,7 @@
 				2FB549722AA1EF7400DB2F7C /* HomeViewController.swift */,
 				2FB549742AA1EF7C00DB2F7C /* HomeView.swift */,
 				2FC513BC2AA1F58000FBDB6C /* CustomHomeCell.swift */,
+				2F95A5FE2ADEB44E00159534 /* HomeModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -569,7 +643,10 @@
 			);
 			name = Threads;
 			packageProductDependencies = (
-				2F95527E2AC70BBA00DEC7A5 /* Alamofire */,
+				2F95A5F62AD571BA00159534 /* CombineMoya */,
+				2F95A5F82AD571BA00159534 /* Moya */,
+				2F95A5FA2AD571BA00159534 /* ReactiveMoya */,
+				2F95A5FC2AD571BA00159534 /* RxMoya */,
 			);
 			productName = Threads;
 			productReference = 2F45BAAF2A7A575400099377 /* Threads.app */;
@@ -600,7 +677,7 @@
 			);
 			mainGroup = 2F45BAA62A7A575400099377;
 			packageReferences = (
-				2F95527D2AC70BBA00DEC7A5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				2F95A5F52AD571BA00159534 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = 2F45BAB02A7A575400099377 /* Products */;
 			projectDirPath = "";
@@ -714,13 +791,19 @@
 			files = (
 				2FB549642A8E243F00DB2F7C /* CustomProfileCell.swift in Sources */,
 				2FB549752AA1EF7C00DB2F7C /* HomeView.swift in Sources */,
+				2F95A5FF2ADEB44E00159534 /* HomeModel.swift in Sources */,
+				2F95A6012ADEC30900159534 /* SearchModel.swift in Sources */,
+				2F95A5E72ACC255B00159534 /* SomeoneProfileCell.swift in Sources */,
 				2FC513BD2AA1F58000FBDB6C /* CustomHomeCell.swift in Sources */,
 				2FE3A06A2A81023D00AA4A93 /* CreateNewPasswordViewController.swift in Sources */,
+				2F95A5EE2ACC4DDE00159534 /* CommentsActivityCell.swift in Sources */,
 				2F156E162AA5CD4A00AB5EBA /* CustomThreadCell.swift in Sources */,
 				2F156E452AA8B69800AB5EBA /* Service.swift in Sources */,
 				2F45BACF2A7A5D1B00099377 /* FlexibleHeightWidth.swift in Sources */,
 				2F156E402AA8B3B700AB5EBA /* SearchView.swift in Sources */,
 				2F95527C2AC7056300DEC7A5 /* EditeProfilePhotoSetViewModel.swift in Sources */,
+				2F95A5E52ACC1EC600159534 /* CustomBottomShareSheet.swift in Sources */,
+				2F95A5DF2ACC165300159534 /* SomeoneProfileView.swift in Sources */,
 				2FE3A0762A8A1BF800AA4A93 /* ProfileViewController.swift in Sources */,
 				2F156E122AA5CD2200AB5EBA /* ThreadViewContrller.swift in Sources */,
 				2FE3A05E2A80D97700AA4A93 /* ForgotPasswordView.swift in Sources */,
@@ -730,15 +813,19 @@
 				2F45BAB72A7A575400099377 /* ViewController.swift in Sources */,
 				2FD666A02ABC66DA00C902FC /* SearchViewController.swift in Sources */,
 				2FD6669C2AB8D3FC00C902FC /* TokenResponse.swift in Sources */,
+				2F95A5F02ACC4DFB00159534 /* RequestsActivityCell.swift in Sources */,
+				2F95A5DC2ACBE05600159534 /* SearchViewModel.swift in Sources */,
 				2FD666972AB851A600C902FC /* ForgotPasswordViewModel.swift in Sources */,
 				2F95521D2ABF123700DEC7A5 /* ProfileViewModel.swift in Sources */,
 				2FD666942AB1C20A00C902FC /* AuthManager.swift in Sources */,
 				2FB549672A8F57AF00DB2F7C /* TabBarController.swift in Sources */,
+				2F95A5EA2ACC4D4C00159534 /* ActivityViewController.swift in Sources */,
 				2FB549602A8CBF5300DB2F7C /* EditeProfileView.swift in Sources */,
 				2F45BAC92A7A589600099377 /* BaseViewController.swift in Sources */,
 				2F45BAD42A7A5EE300099377 /* LoginViewController.swift in Sources */,
 				2F45BACB2A7A58A100099377 /* BaseView.swift in Sources */,
 				2F156E422AA8B3C800AB5EBA /* CustomSearchCell.swift in Sources */,
+				2F95A5F42AD004DF00159534 /* NetworkService.swift in Sources */,
 				2FB549732AA1EF7400DB2F7C /* HomeViewController.swift in Sources */,
 				2F156E142AA5CD3600AB5EBA /* ThreadView.swift in Sources */,
 				2FD6668F2AB0470A00C902FC /* SignUpViewModel.swift in Sources */,
@@ -748,7 +835,9 @@
 				2FB549622A8CBF6200DB2F7C /* EditeProfileViewController.swift in Sources */,
 				2FD6669E2ABAEDC900C902FC /* EditProfileViewModel.swift in Sources */,
 				2FE3A0632A80EB0200AA4A93 /* SignUpView.swift in Sources */,
+				2F95A5EC2ACC4D8100159534 /* ActivityView.swift in Sources */,
 				2FB5496B2A8F6B5000DB2F7C /* BorderedTextField.swift in Sources */,
+				2F95A5E12ACC166800159534 /* SomeoneProfileViewController.swift in Sources */,
 				2F156E472AA8BB1C00AB5EBA /* LoginViewModel.swift in Sources */,
 				2FD666992AB85E5D00C902FC /* OTPViewModel.swift in Sources */,
 				2FE3A0602A80D99300AA4A93 /* ForgotPasswordViewController.swift in Sources */,
@@ -986,21 +1075,36 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2F95527D2AC70BBA00DEC7A5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		2F95A5F52AD571BA00159534 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			repositoryURL = "https://github.com/Moya/Moya.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
+				minimumVersion = 15.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2F95527E2AC70BBA00DEC7A5 /* Alamofire */ = {
+		2F95A5F62AD571BA00159534 /* CombineMoya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2F95527D2AC70BBA00DEC7A5 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
+			package = 2F95A5F52AD571BA00159534 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		2F95A5F82AD571BA00159534 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F95A5F52AD571BA00159534 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		2F95A5FA2AD571BA00159534 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F95A5F52AD571BA00159534 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		2F95A5FC2AD571BA00159534 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F95A5F52AD571BA00159534 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -33,23 +33,23 @@ class EditProfileViewModel : EditeProfileProtocol {
         guard let token = AuthManager.shared.accessToken else { return }
         print(token)
         
-        apiService.putPhoto(endpoint: "api/user/me/", token: token, parameters: parameters) { [weak self] (result) in
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let data):
-                    let deceoder = JSONDecoder()
-                    self?.isEditeData = true
-                    self?.setDataResult?(.success(data))
-                    print(data)
-                case .failure(let error):
-                    let errorMessage = "Failed register number: \(error.localizedDescription)"
-                    print(errorMessage)
-                    self?.isEditeData = false
-                    self?.setDataResult?(.failure(error))
-                    print(error)
-                }
-                
-            }
+//        apiService.putPhoto(endpoint: "api/user/me/", token: token, parameters: parameters) { [weak self] (result) in
+//            DispatchQueue.main.async {
+//                switch result {
+//                case .success(let data):
+//                    let deceoder = JSONDecoder()
+//                    self?.isEditeData = true
+//                    self?.setDataResult?(.success(data))
+//                    print(data)
+//                case .failure(let error):
+//                    let errorMessage = "Failed register number: \(error.localizedDescription)"
+//                    print(errorMessage)
+//                    self?.isEditeData = false
+//                    self?.setDataResult?(.failure(error))
+//                    print(error)
+//                }
+//
+//            }
             
             //        apiService.putWithToken(endpoint: "api/user/me/", parameters: parameters, token: token) { [weak self] (result) in
             //            DispatchQueue.main.async {
@@ -68,5 +68,4 @@ class EditProfileViewModel : EditeProfileProtocol {
             //            }
             //        }
         }
-    }
 }

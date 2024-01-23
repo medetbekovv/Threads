@@ -11,21 +11,23 @@ import RswiftResources
 
 class CustomHomeCell : UITableViewCell {
     
-    private lazy var avatarImage : UIImageView = {
+     lazy var avatarImage : UIImageView = {
         let image = UIImageView()
-        image.image = UIImage(named: "profilePhoto")
+        image.image = UIImage(named: "StiveJobsImages")
         image.contentMode = .scaleAspectFit
+        image.layer.cornerRadius = 18 // Set the corner radius value you want
+        image.clipsToBounds = true
         return image
     }()
     
-    private lazy var userNameLabel : UILabel = {
+     lazy var userNameLabel : UILabel = {
         let label = UILabel()
         label.text = "iamnalimov"
         label.font = R.font.sfProDisplayBold(size: 14)
         return label
     }()
     
-    private lazy var threadLabel : UILabel = {
+     lazy var threadLabel : UILabel = {
         let label = UILabel()
         label.font = R.font.sfProDisplayRegular(size: 15)
         label.text = "Innovation sets leaders apart from followers. asdasdasddasfsafasfasfsdafsafdsafsf"
@@ -34,9 +36,12 @@ class CustomHomeCell : UITableViewCell {
         return label
     }()
     
-    private lazy var postImage : UIImageView = {
+     lazy var postImage : UIImageView = {
         let image = UIImageView()
         image.image = UIImage(named: "StiveJobsImages")
+//       image.image = UIImage(named: "profilePhoto")
+//        image.image = UIImage(named: "stephen-king-")
+
         image.contentMode = .scaleAspectFit
         return image
     }()

@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Alamofire
 
 class ApiService {
     
@@ -276,36 +275,36 @@ class ApiService {
   
 
 
-    func putPhoto(endpoint: String, token: String, parameters: [String: Any], completion: @escaping (Result<Data, Error>) -> Void) {
-        guard let url = URL(string: baseURL + endpoint) else { return }
-        
-        let headers: HTTPHeaders = [
-            "Authorization": "Bearer \(token)"
-        ]
-        
-        AF.upload(
-            multipartFormData: { multipartFormData in
-                for (key, value) in parameters {
-                    if let data = (value as? String)?.data(using: .utf8) {
-                        multipartFormData.append(data, withName: key)
-                    }
-                }
-                
-                if let photoData = parameters["photo"] as? Data {
-                    multipartFormData.append(photoData, withName: "photo", fileName: "photo.jpeg", mimeType: "image/jpeg")
-                }
-            },
-            to: url,
-            method: .put,  // Changed to PUT
-            headers: headers
-        ).responseData { response in
-            switch response.result {
-            case .success(let data):
-                completion(.success(data))
-                print(data)
-            case .failure(let error):
-                completion(.failure(error))
-            }
-        }
-    }
+//    func putPhoto(endpoint: String, token: String, parameters: [String: Any], completion: @escaping (Result<Data, Error>) -> Void) {
+//        guard let url = URL(string: baseURL + endpoint) else { return }
+//
+//        let headers: HTTPHeaders = [
+//            "Authorization": "Bearer \(token)"
+//        ]
+//
+//        AF.upload(
+//            multipartFormData: { multipartFormData in
+//                for (key, value) in parameters {
+//                    if let data = (value as? String)?.data(using: .utf8) {
+//                        multipartFormData.append(data, withName: key)
+//                    }
+//                }
+//
+//                if let photoData = parameters["photo"] as? Data {
+//                    multipartFormData.append(photoData, withName: "photo", fileName: "photo.jpeg", mimeType: "image/jpeg")
+//                }
+//            },
+//            to: url,
+//            method: .put,  // Changed to PUT
+//            headers: headers
+//        ).responseData { response in
+//            switch response.result {
+//            case .success(let data):
+//                completion(.success(data))
+//                print(data)
+//            case .failure(let error):
+//                completion(.failure(error))
+//            }
+//        }
+//    }
 }

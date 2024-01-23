@@ -19,7 +19,7 @@ class TabBarController : UITabBarController {
         viewControllers = [createController(viewController: HomeViewController(), imageName: "home"),
                            createController(viewController: SearchViewController(), imageName: "search"),
                            createController(viewController: UIViewController(), imageName: "write"),
-                           createController(viewController: UIViewController(), imageName: "activity"),
+                           createController(viewController: ActivityViewController(), imageName: "activity"),
                            createController(viewController: ProfileViewController(profileProtocol: ProfileViewModel(), profileUImageProtocol: ProfileUImageViewModel()), imageName: "profile")
         ]
         

@@ -69,9 +69,12 @@ struct _R {
     var black: RswiftResources.ColorResource { .init(name: "Black", path: [], bundle: bundle) }
   }
 
-  /// This `_R.image` struct is generated, and contains static references to 25 images.
+  /// This `_R.image` struct is generated, and contains static references to 38 images.
   struct image {
     let bundle: Foundation.Bundle
+
+    /// Image `AvatarFour`.
+    var avatarFour: RswiftResources.ImageResource { .init(name: "AvatarFour", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `AvatarThread`.
     var avatarThread: RswiftResources.ImageResource { .init(name: "AvatarThread", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
@@ -81,6 +84,18 @@ struct _R {
 
     /// Image `EditeProfilePhoto`.
     var editeProfilePhoto: RswiftResources.ImageResource { .init(name: "EditeProfilePhoto", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `PinIcon`.
+    var pinIcon: RswiftResources.ImageResource { .init(name: "PinIcon", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `ProfileBadge`.
+    var profileBadge: RswiftResources.ImageResource { .init(name: "ProfileBadge", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `ReplyBadge`.
+    var replyBadge: RswiftResources.ImageResource { .init(name: "ReplyBadge", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `Shareicon 1`.
+    var shareicon1: RswiftResources.ImageResource { .init(name: "Shareicon 1", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `StiveJobsImages`.
     var stiveJobsImages: RswiftResources.ImageResource { .init(name: "StiveJobsImages", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
@@ -115,11 +130,29 @@ struct _R {
     /// Image `home`.
     var home: RswiftResources.ImageResource { .init(name: "home", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
+    /// Image `image11`.
+    var image11: RswiftResources.ImageResource { .init(name: "image11", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `image12`.
+    var image12: RswiftResources.ImageResource { .init(name: "image12", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `image13`.
+    var image13: RswiftResources.ImageResource { .init(name: "image13", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `image14`.
+    var image14: RswiftResources.ImageResource { .init(name: "image14", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
     /// Image `likeIcon`.
     var likeIcon: RswiftResources.ImageResource { .init(name: "likeIcon", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `navigateBur`.
     var navigateBur: RswiftResources.ImageResource { .init(name: "navigateBur", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `neobis`.
+    var neobis: RswiftResources.ImageResource { .init(name: "neobis", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `neobis1`.
+    var neobis1: RswiftResources.ImageResource { .init(name: "neobis1", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `profile`.
     var profile: RswiftResources.ImageResource { .init(name: "profile", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
@@ -144,6 +177,12 @@ struct _R {
 
     /// Image `setImage`.
     var setImage: RswiftResources.ImageResource { .init(name: "setImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `stephen-king-`.
+    var stephenKing: RswiftResources.ImageResource { .init(name: "stephen-king-", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `usmanova`.
+    var usmanova: RswiftResources.ImageResource { .init(name: "usmanova", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `write`.
     var write: RswiftResources.ImageResource { .init(name: "write", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
